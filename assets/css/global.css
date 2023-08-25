@@ -60,6 +60,59 @@ img{
 	}
 }
 
+/* ----- slider arrows ----- */
+.slider-btn-prev{
+	margin-right: 30px;
+}
+.slider-btn-prev,
+.slider-btn-next{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 1px solid #757C9D;
+	background: #757C9D;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.slider-btn-prev svg,
+.slider-btn-next svg{
+	width: 30px;
+	fill: #fff;
+	transform: translateX(-2px);
+}
+.slider-btn-next{
+	transform: rotate(180deg);
+}
+.slider-btn-prev[aria-disabled="true"],
+.slider-btn-next[aria-disabled="true"] {
+	background: transparent;
+}
+.slider-btn-prev[aria-disabled="true"] svg,
+.slider-btn-next[aria-disabled="true"] svg {
+	background: transparent;
+	fill: #757C9D;
+}
+
+
+@media screen and (max-width: 680px){
+	.work-btn-prev{
+		margin-right: 24px;
+	}
+	.work-btn-prev,
+	.work-btn-next{
+		width: 38px;
+		height: 38px;
+	}
+	.work-btn-prev svg,
+	.work-btn-next svg{
+		width: 25px;
+	}
+}
+
+/* ----- end slider arrows ----- */
+
 /* ----------- RESET ----------- */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,

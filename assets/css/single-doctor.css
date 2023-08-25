@@ -354,6 +354,88 @@
 }
 
 /* --------------------- end skill --------------------- */
+/* --------------------- work --------------------- */
+.work {
+	margin-bottom: 80px;
+}
+.work__slider {
+	width: 100%;
+}
+.work__image {
+	border-radius: 5px;
+	overflow: hidden;
+	user-select: none;
+}
+.work__image img{
+	width: 100%;
+	max-height: 263px;
+	min-height: 263px;
+	object-fit: cover;
+}
+.work__head{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 39px;
+}
+.work__buttons{
+	display: flex;
+}
+/* --------------------- end work --------------------- */
+/* --------------------- reviews --------------------- */
+.reviews {
+	margin-bottom: 80px;
+}
+.reviews__slider {
+	width: 100%;
+}
+
+.reviews__head{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 39px;
+}
+.reviews__buttons{
+	display: flex;
+}
+.reviews__item{
+	border-radius: 15px;
+	border: 1px solid #757C9D;
+	background: #FFF;
+	padding: 25px 15px;
+}
+.reviews__item-head{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.reviews__item-avatar{
+	margin-right: 15px;
+}
+.reviews__item-right{
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+.reviews__item-rating {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 150px;
+	height: 25px;
+}
+.reviews__item-star {
+	width: 21px;
+	height: 19px;
+	fill: #5D606C;
+}
+
+
+/* --------------------- end reviews --------------------- */
 
 @media screen and (max-width: 990px) {
 	/* --------------------- doctor --------------------- */
@@ -428,6 +510,15 @@
 	}
 
 	/* --------------------- end skill --------------------- */
+	/* --------------------- work --------------------- */
+	.work__image img{
+		max-height: 237px;
+		min-height: 237px;
+	}
+	.work__head{
+		margin-bottom: 40px;
+	}
+	/* --------------------- end work --------------------- */
 }
 
 @media screen and (max-width: 680px) {
@@ -625,10 +716,10 @@
 		align-items: center;
 		justify-content: center;
 		color: #fff;
-    position: sticky;
-    top: 0;
-    right: 0;
-    z-index: 2;
+		position: sticky;
+		top: 0;
+		right: 0;
+		z-index: 2;
 	}
 
 	.skill__dates-name {
@@ -653,8 +744,20 @@
 	.skill__images-item img {
 		width: 100%;
 	}
-
 	/* --------------------- end skill --------------------- */
+	/* --------------------- work --------------------- */
+	.work {
+		margin-bottom: 60px;
+	}
+	.work__image img{
+		max-height: 192px;
+		min-height: 192px;
+	}
+	.work__head{
+		margin-bottom: 32px;
+	}
+
+	/* --------------------- end work --------------------- */
 }
 
 @media screen and (max-width: 480px) {
