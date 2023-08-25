@@ -1,0 +1,99 @@
+:root {
+	--primary-color: #FFA200;
+	--secondary-color: #86BB2A;
+	--white-color: #FFFFFF;
+	--dark-color: #000000;
+	--text-color: #5E5E60;
+	--text-color-var: #5A5C60;
+	--bg-color: #F6F6F6;
+
+	--font-myriard-pro: 'Myriad Pro', sans-serif;
+	--font-museo-sans: 'Museo Sans Cyrl', sans-serif;
+	--font-open-sans: 'OpenSans', sans-serif;
+}
+
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+body {
+	font-weight: 400;
+	line-height: 30px;
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	font-family: Montserrat, 'sans-serif';
+	color: #5D606C;
+}
+.container{
+	max-width: 1280px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+img{
+	display: block;
+}
+.single-doctor-title{
+	color: #333;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+@media screen and (max-width: 990px) {
+	.single-doctor-title{
+		font-size: 35px;
+	}
+}
+@media screen and (max-width: 680px) {
+	.single-doctor-title{
+		font-size: 25px;
+	}
+}
+
+/* ----------- RESET ----------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
