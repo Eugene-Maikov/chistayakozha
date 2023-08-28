@@ -72,6 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const reviewsSlider = new Swiper('.reviews__slider', {
     slidesPerView: 3,
     spaceBetween: 31,
+    resizeObserver: true,
 
     navigation: {
       nextEl: ".reviews__buttons .slider-btn-next",
@@ -93,20 +94,66 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Имени и отчество с новой строки
+  // Отчество и фамилия с новой строки
+  const splitString = () => {
+    const names = document.querySelectorAll('.reviews__item-name')
+    names.forEach((item) => {
 
-  const names = document.querySelectorAll('.reviews__item-name')
+      let str = item.textContent
+      let words = str.split(' ')
+      words.splice(1, 0, '<br>')
+      item.innerHTML = words.join(' ')
+    })
 
-  names.forEach((item) => {
-    return item.replace(/\s/, '\n');
-  })
-
-  function addNewLine(str) {
-    return str.replace(/\s/, '\n');
+    if (window.innerWidth > 680) {
+      const containerNames = document.querySelectorAll('.reviews__item-right')
+      containerNames.forEach((item) => {
+        if (item.offsetHeight > 82) {
+          item.querySelector('.reviews__item-name').style.fontSize = 14 + 'px'
+        }
+      })
+    }
   }
+  splitString()
 
-  var input = 'Пример текста.';
-  var output = addNewLine(input);
-  console.log(output);
+  const composeVideo = () => {
+
+    const player = document.querySelectorAll('.youtube-player')
+    const link = document.querySelector('.about-doctor__link')
+
+    if (player && link) {
+      const videoId = link.textContent.match(/\/embed\/([^?]+)/)[1]
+      const videoThumbnailUrl = `https://img.youtube.com/vi/${videoId}/0.jpg`
+      const videoThumbnail = document.createElement('img')
+
+      videoThumbnail.src = videoThumbnailUrl
+      player.forEach((item) => {
+        item.appendChild(videoThumbnail)
+      })
+
+      const loadPlayer = (evt) => {
+        const target = evt.currentTarget
+        const iframe = document.createElement('iframe')
+        iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`
+        iframe.setAttribute('width', 100 + '%')
+        iframe.setAttribute('height', 100 + '%')
+        iframe.setAttribute('allow', 'autoplay')
+        target.classList.remove('btn-dis')
+
+        if (target.children.length) {
+          target.replaceChild(iframe, target.firstElementChild)
+        } else {
+          target.appendChild(iframe)
+        }
+      }
+
+      const config = { once: true }
+
+      Array.from(player).forEach(function(player) {
+        player.addEventListener('click', loadPlayer, config)
+      })
+    }
+  }
+  composeVideo()
 
 })

@@ -61,9 +61,6 @@ img{
 }
 
 /* ----- slider arrows ----- */
-.slider-btn-prev{
-	margin-right: 30px;
-}
 .slider-btn-prev,
 .slider-btn-next{
 	width: 50px;
@@ -95,18 +92,14 @@ img{
 	fill: #757C9D;
 }
 
-
 @media screen and (max-width: 680px){
-	.work-btn-prev{
-		margin-right: 24px;
-	}
-	.work-btn-prev,
-	.work-btn-next{
+	.slider-btn-prev,
+	.slider-btn-next{
 		width: 38px;
 		height: 38px;
 	}
-	.work-btn-prev svg,
-	.work-btn-next svg{
+	.slider-btn-prev svg,
+	.slider-btn-next svg{
 		width: 25px;
 	}
 }

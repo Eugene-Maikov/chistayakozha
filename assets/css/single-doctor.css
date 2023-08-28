@@ -73,6 +73,7 @@
 	color: #A0072C;
 	font-size: 30px;
 	font-weight: 500;
+	line-height: normal;
 	margin-right: 16px;
 }
 
@@ -85,6 +86,7 @@
 	color: #A0072C;
 	font-size: 16px;
 	font-weight: 500;
+	line-height: normal;
 	text-decoration-line: underline;
 }
 
@@ -118,6 +120,7 @@
 	color: #FFF;
 	font-size: 16px;
 	font-weight: 500;
+	line-height: normal;
 	text-decoration: none;
 	margin-top: 25px;
 }
@@ -185,6 +188,7 @@
 	color: #5D606C;
 	font-size: 18px;
 	font-weight: 500;
+	line-height: normal;
 }
 
 .doctor__info-more {
@@ -193,6 +197,7 @@
 	color: #757C9D;
 	font-size: 18px;
 	font-weight: 500;
+	line-height: normal;
 	text-decoration: none;
 }
 
@@ -224,6 +229,7 @@
 	color: #757C9D;
 	font-size: 25px;
 	font-weight: 500;
+	line-height: normal;
 	cursor: pointer;
 }
 
@@ -300,6 +306,7 @@
 	color: #FFF;
 	font-size: 18px;
 	font-weight: 500;
+	line-height: normal;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -330,12 +337,14 @@
 	font-size: 20px;
 	font-weight: 500;
 	margin-bottom: 5px;
+	line-height: normal;
 }
 
 .skill__dates-description {
 	color: #5D606C;
 	font-size: 18px;
 	font-weight: 500;
+	line-height: normal;
 }
 
 .skill__images {
@@ -358,68 +367,118 @@
 .work {
 	margin-bottom: 80px;
 }
+
 .work__slider {
 	width: 100%;
 }
+
+.work .slider-btn-prev {
+	margin-right: 30px;
+}
+
 .work__image {
 	border-radius: 5px;
 	overflow: hidden;
 	user-select: none;
 }
-.work__image img{
+
+.work__image img {
 	width: 100%;
 	max-height: 263px;
 	min-height: 263px;
 	object-fit: cover;
 }
-.work__head{
+
+.work__head {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 39px;
 }
-.work__buttons{
+
+.work__buttons {
 	display: flex;
 }
+
 /* --------------------- end work --------------------- */
 /* --------------------- reviews --------------------- */
 .reviews {
 	margin-bottom: 80px;
 }
+
+.reviews .swiper-slide {
+	display: flex;
+	height: auto;
+}
+
 .reviews__slider {
 	width: 100%;
 }
 
-.reviews__head{
+.reviews .slider-btn-prev {
+	margin-right: 30px;
+}
+
+.reviews__head {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 39px;
 }
-.reviews__buttons{
+
+.reviews__buttons {
 	display: flex;
 }
-.reviews__item{
+
+.reviews__item {
 	border-radius: 15px;
 	border: 1px solid #757C9D;
 	background: #FFF;
 	padding: 25px 15px;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
 }
-.reviews__item-head{
+
+.reviews__item-head {
 	display: flex;
 	justify-content: flex-start;
 }
 
-.reviews__item-avatar{
+.reviews__item-avatar {
 	margin-right: 15px;
+	max-width: 82px;
+	min-width: 82px;
+	max-height: 82px;
+	min-height: 82px;
 }
-.reviews__item-right{
+
+.reviews__item-head {
+	margin-bottom: 23px;
+	flex: 0 0 82px;
+}
+
+.reviews__item-avatar img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.reviews__item-right {
 	display: flex;
 	align-items: flex-start;
 	flex-direction: column;
 	justify-content: space-between;
 }
 
+.reviews__item-name {
+	color: #000;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: normal;
+}
 
 .reviews__item-rating {
 	display: flex;
@@ -428,14 +487,126 @@
 	width: 150px;
 	height: 25px;
 }
+
 .reviews__item-star {
 	width: 21px;
 	height: 19px;
 	fill: #5D606C;
 }
 
+.reviews__item-body {
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
 
+.reviews__item-description p {
+	color: #5D606C;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: normal;
+	/*Ограничение по кол-ву строк*/
+	display: -webkit-box;
+	-webkit-line-clamp: 9;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+
+.reviews__item-description {
+	margin-bottom: 10px;
+}
+
+.reviews__item-more {
+	color: #757C9D;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.reviews__btn {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+.reviews__btn a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 212px;
+	height: 50px;
+	border-radius: 25px;
+	background: #A0072C;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: normal;
+	text-align: center;
+	text-decoration: none;
+}
 /* --------------------- end reviews --------------------- */
+/* --------------------- about-doctor --------------------- */
+.about-doctor{
+	margin-bottom: 80px;
+}
+.about-doctor .single-doctor-title{
+	margin-bottom: 40px;
+	text-align: center;
+}
+.about-doctor__video {
+	width: 822px;
+	height: 416px;
+	margin: 0 auto;
+	border-radius: 16px;
+	overflow: hidden;
+}
+.youtube-player{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.youtube-player img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.about-doctor__btn{
+	border-radius: 50%;
+	width: 105px;
+	height: 105px;
+	background: #757C9D;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+	display: none;
+}
+.about-doctor__btn:after{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-40%, -50%);
+	width: 59px;
+	height: 59px;
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='59' height='59' viewBox='0 0 59 59' fill='none'%3e%3cpath d='M15.3736 50.2037C14.6828 50.2024 14.0041 50.0214 13.4045 49.6783C12.0542 48.9131 11.2148 47.4278 11.2148 45.8154V13.1844C11.2148 11.5675 12.0542 10.0867 13.4045 9.32157C14.0184 8.96874 14.7158 8.7873 15.4239 8.79621C16.1319 8.80512 16.8245 9.00405 17.4294 9.3722L45.3176 26.0658C45.8988 26.4302 46.378 26.9363 46.7101 27.5366C47.0422 28.1368 47.2165 28.8116 47.2165 29.4977C47.2165 30.1837 47.0422 30.8585 46.7101 31.4587C46.378 32.059 45.8988 32.5651 45.3176 32.9295L17.4249 49.6276C16.8059 50.0018 16.0969 50.201 15.3736 50.2037Z' fill='white'/%3e%3c/svg%3e");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.btn-dis .about-doctor__btn{
+	display: block;
+}
+.about-doctor__link{
+	font-size: 0;
+	opacity: 0;
+}
+/* --------------------- end about-doctor --------------------- */
 
 @media screen and (max-width: 990px) {
 	/* --------------------- doctor --------------------- */
@@ -511,14 +682,31 @@
 
 	/* --------------------- end skill --------------------- */
 	/* --------------------- work --------------------- */
-	.work__image img{
+	.work__image img {
 		max-height: 237px;
 		min-height: 237px;
 	}
-	.work__head{
+
+	.work__head {
 		margin-bottom: 40px;
 	}
+
 	/* --------------------- end work --------------------- */
+	/* --------------------- reviews --------------------- */
+	.reviews__item-description p {
+		/*Ограничение по кол-ву строк*/
+		-webkit-line-clamp: 11;
+	}
+
+	.reviews__btn {
+		margin-top: 35px;
+	}
+
+	.reviews__btn a {
+		width: 247px;
+	}
+
+	/* --------------------- end reviews --------------------- */
 }
 
 @media screen and (max-width: 680px) {
@@ -744,20 +932,51 @@
 	.skill__images-item img {
 		width: 100%;
 	}
+
 	/* --------------------- end skill --------------------- */
 	/* --------------------- work --------------------- */
 	.work {
 		margin-bottom: 60px;
 	}
-	.work__image img{
+
+	.work__image img {
 		max-height: 192px;
 		min-height: 192px;
 	}
-	.work__head{
+
+	.work__head {
 		margin-bottom: 32px;
 	}
 
+	.work .slider-btn-prev {
+		margin-right: 24px;
+	}
+
 	/* --------------------- end work --------------------- */
+	/* --------------------- reviews --------------------- */
+	.reviews {
+		margin-bottom: 60px;
+	}
+
+	.reviews__item-name {
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+
+	.reviews__item-description p {
+		/*Ограничение по кол-ву строк*/
+		-webkit-line-clamp: 14;
+	}
+
+	.reviews .slider-btn-prev {
+		margin-right: 24px;
+	}
+
+	.reviews__btn {
+		margin-top: 25px;
+	}
+
+	/* --------------------- end reviews --------------------- */
 }
 
 @media screen and (max-width: 480px) {
@@ -774,4 +993,12 @@
 	}
 
 	/* --------------------- end skill --------------------- */
+	/* ---------------------  reviews --------------------- */
+	.reviews__btn a {
+		width: 100%;
+	}
+
+	/* --------------------- end reviews --------------------- */
+
+
 }
