@@ -548,15 +548,18 @@
 	text-align: center;
 	text-decoration: none;
 }
+
 /* --------------------- end reviews --------------------- */
 /* --------------------- about-doctor --------------------- */
-.about-doctor{
+.about-doctor {
 	margin-bottom: 80px;
 }
-.about-doctor .single-doctor-title{
+
+.about-doctor .single-doctor-title {
 	margin-bottom: 40px;
 	text-align: center;
 }
+
 .about-doctor__video {
 	width: 822px;
 	height: 416px;
@@ -564,17 +567,20 @@
 	border-radius: 16px;
 	overflow: hidden;
 }
-.youtube-player{
+
+.youtube-player {
 	position: relative;
 	width: 100%;
 	height: 100%;
 }
-.youtube-player img{
+
+.youtube-player img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
-.about-doctor__btn{
+
+.about-doctor__btn {
 	border-radius: 50%;
 	width: 105px;
 	height: 105px;
@@ -586,7 +592,8 @@
 	cursor: pointer;
 	display: none;
 }
-.about-doctor__btn:after{
+
+.about-doctor__btn:after {
 	content: '';
 	position: absolute;
 	top: 50%;
@@ -599,13 +606,16 @@
 	background-position: center;
 	background-repeat: no-repeat;
 }
-.btn-dis .about-doctor__btn{
+
+.btn-dis .about-doctor__btn {
 	display: block;
 }
-.about-doctor__link{
+
+.about-doctor__link {
 	font-size: 0;
 	opacity: 0;
 }
+
 /* --------------------- end about-doctor --------------------- */
 
 @media screen and (max-width: 990px) {
@@ -833,7 +843,6 @@
 		width: calc(100% - 1px);
 		min-height: 490px;
 		max-height: 490px;
-		overflow-y: auto;
 		border: 1px solid #757C9D;
 		border-radius: 15px 15px 0 0;
 		overflow: hidden;

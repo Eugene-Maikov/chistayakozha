@@ -93,6 +93,30 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   });
+  const otherDoctorsSlider = new Swiper('.other-doctors__slider', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    resizeObserver: true,
+
+    navigation: {
+      nextEl: ".other-doctors__buttons .slider-btn-next",
+      prevEl: ".other-doctors__buttons .slider-btn-prev",
+    },
+
+    breakpoints: {
+      320: {
+        slidesPerView: '1',
+      },
+      768: {
+        slidesPerView: '2',
+        spaceBetween: 30,
+      },
+      990: {
+        slidesPerView: '3',
+        spaceBetween: 31,
+      }
+    }
+  });
 
   // Отчество и фамилия с новой строки
   const splitString = () => {
