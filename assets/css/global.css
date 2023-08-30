@@ -85,6 +85,7 @@ img{
 .slider-btn-prev[aria-disabled="true"],
 .slider-btn-next[aria-disabled="true"] {
 	background: transparent;
+	cursor: default;
 }
 .slider-btn-prev[aria-disabled="true"] svg,
 .slider-btn-next[aria-disabled="true"] svg {

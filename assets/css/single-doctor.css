@@ -617,6 +617,110 @@
 }
 
 /* --------------------- end about-doctor --------------------- */
+/* --------------------- other-doctors --------------------- */
+.other-doctors {
+	margin-bottom: 160px;
+}
+.other-doctors__head{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.other-doctors__slider{
+	position: relative;
+}
+.other-doctors__buttons{
+	display: flex;
+	justify-content: space-between;
+}
+.other-doctors__buttons .slider-btn-prev,
+.other-doctors__buttons .slider-btn-next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 1;
+}
+.other-doctors__buttons .slider-btn-prev {
+	left: 20px;
+}
+.other-doctors__buttons .slider-btn-next {
+	right: 20px;
+	transform: translateY(-50%) rotate(180deg);
+}
+
+.other-doctors__buttons .slider-btn-prev[aria-disabled="true"],
+.other-doctors__buttons .slider-btn-next[aria-disabled="true"] {
+	background: #fff;
+	border: none;
+	cursor: default;
+}
+.other-doctors__buttons .slider-btn-prev[aria-disabled="true"] svg,
+.other-doctors__buttons .slider-btn-next[aria-disabled="true"] svg {
+	background: #fff;
+	fill: #757C9D;
+}
+
+.other-doctors__all a{
+	color: #757C9D;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: normal;
+	text-decoration: none;
+}
+.other-doctors__item{
+	height: 619px;
+	border-radius: 18px;
+	border: 1px solid #757C9D;
+	background: #FFF;
+	overflow: hidden;
+}
+.other-doctors__image img {
+	max-width: 396px;
+	min-width: 396px;
+	max-height: 378px;
+	min-height: 378px;
+	object-fit: cover;
+	object-position: 0 -40px;
+}
+.other-doctors__content{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.other-doctors__name{
+	color: #333;
+	font-size: 30px;
+	font-weight: 500;
+	line-height: normal;
+	margin-bottom: 10px;
+}
+.other-doctors__major{
+	display: block;
+	color: #5D606C;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: normal;
+	margin-bottom: 23px;
+}
+.other-doctors__btn a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 212px;
+	height: 50px;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: normal;
+	text-decoration: none;
+	border-radius: 25px;
+	background: #757C9D;
+}
+
+/* --------------------- end other-doctors --------------------- */
 
 @media screen and (max-width: 990px) {
 	/* --------------------- doctor --------------------- */
