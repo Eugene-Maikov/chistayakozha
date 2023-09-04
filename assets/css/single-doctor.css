@@ -731,6 +731,7 @@
 	text-decoration: none;
 	border-radius: 25px;
 	background: #757C9D;
+	user-select: none;
 }
 
 /* --------------------- end other-doctors --------------------- */

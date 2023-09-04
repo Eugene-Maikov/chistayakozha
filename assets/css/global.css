@@ -33,36 +33,64 @@ body {
 	font-family: Montserrat, 'sans-serif';
 	color: #5D606C;
 }
-.container{
+
+.container {
 	max-width: 1280px;
 	padding: 0 15px;
 	margin: 0 auto;
 }
 
-img{
+.overlay {
+
+}
+
+.overlay {
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.50);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 19;
+}
+
+.overlay.active {
 	display: block;
 }
-.single-doctor-title{
+
+.no-scroll {
+	overflow: hidden;
+	padding-right: 15px;
+}
+
+img {
+	display: block;
+}
+
+.single-doctor-title {
 	color: #333;
 	font-size: 40px;
 	font-style: normal;
 	font-weight: 500;
 	line-height: normal;
 }
+
 @media screen and (max-width: 990px) {
-	.single-doctor-title{
+	.single-doctor-title {
 		font-size: 35px;
 	}
 }
+
 @media screen and (max-width: 680px) {
-	.single-doctor-title{
+	.single-doctor-title {
 		font-size: 25px;
 	}
 }
 
 /* ----- slider arrows ----- */
 .slider-btn-prev,
-.slider-btn-next{
+.slider-btn-next {
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
@@ -73,34 +101,39 @@ img{
 	align-items: center;
 	cursor: pointer;
 }
+
 .slider-btn-prev svg,
-.slider-btn-next svg{
+.slider-btn-next svg {
 	width: 30px;
 	fill: #fff;
 	transform: translateX(-2px);
 }
-.slider-btn-next{
+
+.slider-btn-next {
 	transform: rotate(180deg);
 }
+
 .slider-btn-prev[aria-disabled="true"],
 .slider-btn-next[aria-disabled="true"] {
 	background: transparent;
 	cursor: default;
 }
+
 .slider-btn-prev[aria-disabled="true"] svg,
 .slider-btn-next[aria-disabled="true"] svg {
 	background: transparent;
 	fill: #757C9D;
 }
 
-@media screen and (max-width: 680px){
+@media screen and (max-width: 680px) {
 	.slider-btn-prev,
-	.slider-btn-next{
+	.slider-btn-next {
 		width: 38px;
 		height: 38px;
 	}
+
 	.slider-btn-prev svg,
-	.slider-btn-next svg{
+	.slider-btn-next svg {
 		width: 25px;
 	}
 }
@@ -126,21 +159,196 @@ time, mark, audio, video {
 	border: 0;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* ---------- end RESET ---------- */
+/* ---------- MODAL ---------- */
+.popup-record {
+	width: 456px;
+	height: 547px;
+	border-radius: 15px;
+	background: #FFF;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 20;
+	display: none;
+}
+
+.popup-record.active {
+	display: block;
+}
+
+.popup-record__close {
+	position: absolute;
+	right: 20px;
+	top: 18px;
+	cursor: pointer;
+}
+
+.popup-record__inner {
+	padding: 70px 30px 45px;
+}
+
+.popup-record__title {
+	color: #333;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+/* Стилизация элемента select */
+.popup-record__form-group {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+}
+
+.popup-record__form-group:not(:last-child) {
+	margin-bottom: 25px;
+}
+
+.popup-record__form-group._major select {
+	cursor: pointer;
+	width: 100%;
+	padding: 18px 17px;
+	color: #828282;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	border-radius: 30px;
+	outline: none;
+	border: 1px solid #757C9D;
+	background-color: transparent;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.popup-record__form-group._major::after {
+	content: ''; /* Вставка символа стрелки вниз */
+	position: absolute;
+	top: 50%;
+	right: 9px;
+	transform: translateY(-50%);
+	width: 39px;
+	height: 39px;
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='39' height='39' viewBox='0 0 39 39' fill='none'%3e%3cpath d='M11.375 16.25L19.5 24.375L27.625 16.25' stroke='%23757C9D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
+	pointer-events: none;
+}
+
+.popup-record__form-group._major option {
+	color: #333;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.popup-record__form-group .popup-record__input {
+	width: 100%;
+	padding: 18px 17px;
+	color: #333;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	border-radius: 30px;
+	outline: none;
+	border: 1px solid #757C9D;
+	background-color: transparent;
+}
+
+.popup-record__form-group .popup-record__input::placeholder {
+	color: #828282;
+}
+
+/* =========== стили чекбокса =========== */
+.popup-record__form-group._privacy {
+	margin-bottom: 30px;
+}
+
+.popup-record__form-group._privacy input {
+	display: none;
+}
+
+.popup-record__form-group._privacy p {
+	padding-left: 32px;
+}
+
+.popup-record__form-group._privacy span {
+	color: #5D606C;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	user-select: none;
+}
+
+.popup-record__form-group._privacy a {
+	color: #A0072C;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-decoration-line: underline;
+}
+
+.popup-record__form-group._privacy label {
+	cursor: pointer;
+}
+
+.popup-record__form-group._privacy p:before {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 0;
+	width: 24px;
+	height: 24px;
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3e%3cpath d='M3.75 2H20.25C21.216 2 22 2.784 22 3.75V20.25C22 20.7141 21.8156 21.1592 21.4874 21.4874C21.1592 21.8156 20.7141 22 20.25 22H3.75C3.28587 22 2.84075 21.8156 2.51256 21.4874C2.18437 21.1592 2 20.7141 2 20.25V3.75C2 2.784 2.784 2 3.75 2ZM3.5 3.75V20.25C3.5 20.388 3.612 20.5 3.75 20.5H20.25C20.3163 20.5 20.3799 20.4737 20.4268 20.4268C20.4737 20.3799 20.5 20.3163 20.5 20.25V3.75C20.5 3.6837 20.4737 3.62011 20.4268 3.57322C20.3799 3.52634 20.3163 3.5 20.25 3.5H3.75C3.6837 3.5 3.62011 3.52634 3.57322 3.57322C3.52634 3.62011 3.5 3.6837 3.5 3.75Z' fill='%23A0072C'/%3e%3c/svg%3e");
+}
+
+.popup-record__form-group._privacy input:checked + p:before {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3e%3cpath d='M17.2801 9.27997C17.4126 9.13779 17.4847 8.94975 17.4813 8.75545C17.4778 8.56115 17.3991 8.37576 17.2617 8.23835C17.1243 8.10093 16.9389 8.02222 16.7446 8.01879C16.5503 8.01537 16.3623 8.08749 16.2201 8.21997L10.2501 14.19L7.78009 11.72C7.63792 11.5875 7.44987 11.5154 7.25557 11.5188C7.06127 11.5222 6.87588 11.6009 6.73847 11.7383C6.60106 11.8758 6.52234 12.0611 6.51892 12.2554C6.51549 12.4497 6.58761 12.6378 6.72009 12.78L9.72009 15.78C9.86072 15.9204 10.0513 15.9993 10.2501 15.9993C10.4488 15.9993 10.6395 15.9204 10.7801 15.78L17.2801 9.27997Z' fill='%23A0072C'/%3e%3cpath d='M3.75 2H20.25C21.216 2 22 2.784 22 3.75V20.25C22 20.7141 21.8156 21.1592 21.4874 21.4874C21.1592 21.8156 20.7141 22 20.25 22H3.75C3.28587 22 2.84075 21.8156 2.51256 21.4874C2.18437 21.1592 2 20.7141 2 20.25V3.75C2 2.784 2.784 2 3.75 2ZM3.5 3.75V20.25C3.5 20.388 3.612 20.5 3.75 20.5H20.25C20.3163 20.5 20.3799 20.4737 20.4268 20.4268C20.4737 20.3799 20.5 20.3163 20.5 20.25V3.75C20.5 3.6837 20.4737 3.62011 20.4268 3.57322C20.3799 3.52634 20.3163 3.5 20.25 3.5H3.75C3.6837 3.5 3.62011 3.52634 3.57322 3.57322C3.52634 3.62011 3.5 3.6837 3.5 3.75Z' fill='%23A0072C'/%3e%3c/svg%3e");
+}
+
+/* =========== end стили чекбокса =========== */
+.popup-record__submit {
+	width: 100%;
+	height: 55px;
+	border-radius: 25px;
+	border: none;
+	cursor: pointer;
+	background: #A0072C;
+	color: #FFF;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+/* ---------- end MODAL ---------- */

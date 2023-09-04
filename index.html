@@ -693,6 +693,52 @@
 	<!--	Footer - без изменений, его верстать не надо	-->
 </main>
 
+<div class="popup-record js-modal-record active">
+	<!--	<div class="popup-modal">-->
+	<!--		<div class="popup-modal__title">Успешно!</div>-->
+	<!--	</div>-->
+	<div class="popup-record__inner">
+		<div class="popup-record__block">
+			<h4 class="popup-record__title">Запись на прием</h4>
+			<form action="#1" class="form-record js-form" method="get" name="form-record" novalidate>
+				<div class="popup-record__box">
+					<div class="popup-record__form-group _major">
+						<select>
+							<option value="option1">Специализация</option>
+							<option value="option2">Option 2</option>
+							<option value="option3">Option 3</option>
+							<option value="option4">Option 4</option>
+						</select>
+					</div>
+					<div class="popup-record__form-group">
+						<input class="popup-record__input" name="full-name" placeholder="ФИО" required type="text">
+					</div>
+					<div class="popup-record__form-group">
+						<input class="popup-record__input" name="phone" placeholder="Телефон" required type="tel">
+					</div>
+					<div class="popup-record__form-group _privacy">
+						<label for="privacy">
+							<input checked id="privacy" type="checkbox" value="yes">
+							<p>
+								<span>Заполняя форму на веб-сайте, вы соглашаетесь<br>с нашей</span>
+								<a href="javascript:void(0)">политикой конфиденциальности</a>
+							</p>
+						</label>
+					</div>
+				</div>
+				<button class="popup-record__submit" type="submit">Записаться</button>
+			</form>
+		</div>
+	</div>
+	<div class="popup-record__close js-close">
+		<svg fill="none" height="40" viewBox="0 0 40 40" width="40" xmlns="http://www.w3.org/2000/svg">
+			<path d="M29.5242 29.5238L10.4766 10.4762M29.5242 10.4762L10.4766 29.5238" stroke="#757C9D" stroke-linecap="round"
+			      stroke-linejoin="round"/>
+		</svg>
+	</div>
+</div>
+
+<div class="overlay active"></div>
 <script src="assets/swiper/swiper-bundle.min.js"></script>
 <script src="assets/js/single-doctor.js"></script>
 

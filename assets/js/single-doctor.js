@@ -97,6 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
     slidesPerView: 3,
     spaceBetween: 30,
     resizeObserver: true,
+    allowTouchMove: false,
 
     navigation: {
       nextEl: ".other-doctors__buttons .slider-btn-next",
@@ -140,6 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   splitString()
 
+  // Плеер для видео
   const composeVideo = () => {
 
     const player = document.querySelectorAll('.youtube-player')
@@ -171,13 +173,35 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
 
-      const config = { once: true }
+      const config = {once: true}
 
-      Array.from(player).forEach(function(player) {
+      Array.from(player).forEach(function (player) {
         player.addEventListener('click', loadPlayer, config)
       })
     }
   }
   composeVideo()
+
+  // Маска телефона
+  const handlePhoneMask = () => {
+    const input = document.querySelector('.popup-record__input[type="tel"]')
+
+    if (input) {
+      const phoneMask = () => {
+        let matrix = '+7 (___) ___-__-__'
+        let i = 0
+        let def = matrix.replace(/\D/g, '')
+        let val = input.value.replace(/\D/g, '')
+
+        if (def.length >= val.length) val = def
+        input.value = matrix.replace(/./g, (a) => {
+          return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? '' : a
+        })
+      }
+
+      input.addEventListener('input', phoneMask)
+    }
+  }
+  handlePhoneMask()
 
 })
