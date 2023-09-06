@@ -11,8 +11,9 @@
 	<link href="assets/swiper/swiper-bundle.min.css" rel="stylesheet">
 	<link href="assets/css/global.css" rel="stylesheet">
 	<link href="assets/css/single-doctor.css" rel="stylesheet">
+	<link href="assets/css/modal.css" rel="stylesheet">
 </head>
-<body>
+<body class="no-scroll">
 <main class="main">
 	<!--	Header - без изменений, его верстать не надо	-->
 	<!--	bread-crumbs - без изменений, его верстать не надо 	-->
@@ -693,51 +694,68 @@
 	<!--	Footer - без изменений, его верстать не надо	-->
 </main>
 
-<!--<div class="popup-record js-modal-record active">-->
-	<!--	<div class="popup-modal">-->
-	<!--		<div class="popup-modal__title">Успешно!</div>-->
-	<!--	</div>-->
-<!--	<div class="popup-record__inner">-->
-<!--		<div class="popup-record__block">-->
-<!--			<h4 class="popup-record__title">Запись на прием</h4>-->
-<!--			<form action="#1" class="form-record js-form" method="get" name="form-record" novalidate>-->
-<!--				<div class="popup-record__box">-->
-<!--					<div class="popup-record__form-group _major">-->
-<!--						<select>-->
-<!--							<option value="option1">Специализация</option>-->
-<!--							<option value="option2">Option 2</option>-->
-<!--							<option value="option3">Option 3</option>-->
-<!--							<option value="option4">Option 4</option>-->
-<!--						</select>-->
-<!--					</div>-->
-<!--					<div class="popup-record__form-group">-->
-<!--						<input class="popup-record__input" name="full-name" placeholder="ФИО" required type="text">-->
-<!--					</div>-->
-<!--					<div class="popup-record__form-group">-->
-<!--						<input class="popup-record__input" name="phone" placeholder="Телефон" required type="tel">-->
-<!--					</div>-->
-<!--					<div class="popup-record__form-group _privacy">-->
-<!--						<label for="privacy">-->
-<!--							<input checked id="privacy" type="checkbox" value="yes">-->
-<!--							<p>-->
-<!--								<span>Заполняя форму на веб-сайте, вы соглашаетесь<br>с нашей</span>-->
-<!--								<a href="javascript:void(0)">политикой конфиденциальности</a>-->
-<!--							</p>-->
-<!--						</label>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--				<button class="popup-record__submit" type="submit">Записаться</button>-->
-<!--			</form>-->
-<!--		</div>-->
-<!--	</div>-->
-<!--	<div class="popup-record__close js-close">-->
-<!--		<svg fill="none" height="40" viewBox="0 0 40 40" width="40" xmlns="http://www.w3.org/2000/svg">-->
-<!--			<path d="M29.5242 29.5238L10.4766 10.4762M29.5242 10.4762L10.4766 29.5238" stroke="#757C9D" stroke-linecap="round"-->
-<!--			      stroke-linejoin="round"/>-->
-<!--		</svg>-->
-<!--	</div>-->
-<!--</div>-->
+<div class="popup-record js-modal-record active">
+	<!--		<div class="popup-modal">-->
+	<!--			<div class="popup-modal__title">Успешно!</div>-->
+	<!--		</div>-->
+	<div class="popup-record__inner">
+		<div class="popup-record__block">
+			<h4 class="popup-record__title">Запись на прием</h4>
+			<form action="#1" class="form-record js-form" method="get" name="form-record" novalidate>
+				<div class="popup-record__box">
+					<div class="popup-record__form-group">
+						<div class="popup-record__major">
+							<div class="popup-record__select-name">
+								<span>Специализация</span>
+								<svg viewBox="0 0 19 11" fill="none">
+									<path d="M1.375 1.25L9.5 9.375L17.625 1.25" stroke="#757C9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+							<div class="popup-record-option-list">
+								<div class="popup-record-option-item">
+									<label for="major-1">Трихология</label>
+									<input type="radio" name="major" id="major-1" value="Трихология">
+								</div>
+								<div class="popup-record-option-item">
+									<label for="major-2">Венерология</label>
+									<input type="radio" name="major" id="major-2" value="Венерология">
+								</div>
+								<div class="popup-record-option-item">
+									<label for="major-3">Дерматология</label>
+									<input type="radio" name="major" id="major-3" value="Дерматология">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="popup-record__form-group">
+						<input class="popup-record__input error" name="full-name" placeholder="ФИО" required type="text">
+					</div>
+					<div class="popup-record__form-group">
+						<input class="popup-record__input error" name="phone" placeholder="Телефон" required type="tel">
+					</div>
+					<div class="popup-record__form-group _privacy">
+						<label for="privacy">
+							<input class="error" checked id="privacy" type="checkbox" value="yes">
+							<p>
+								<span>Заполняя форму на веб-сайте, вы соглашаетесь<br>с нашей</span>
+								<a href="javascript:void(0)">политикой конфиденциальности</a>
+							</p>
+						</label>
+					</div>
+				</div>
+				<button class="popup-record__submit" type="submit">Записаться</button>
+			</form>
+		</div>
+	</div>
+	<div class="popup-record__close js-close">
+		<svg fill="none" height="40" viewBox="0 0 40 40" width="40" xmlns="http://www.w3.org/2000/svg">
+			<path d="M29.5242 29.5238L10.4766 10.4762M29.5242 10.4762L10.4766 29.5238" stroke="#757C9D" stroke-linecap="round"
+			      stroke-linejoin="round"/>
+		</svg>
+	</div>
+</div>
 
+<div class="overlay active"></div>
 <script src="assets/swiper/swiper-bundle.min.js"></script>
 <script src="assets/js/single-doctor.js"></script>
 

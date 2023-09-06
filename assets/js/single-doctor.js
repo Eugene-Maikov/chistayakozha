@@ -204,4 +204,35 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   handlePhoneMask()
 
+  // Поле специальности
+  const switchMajor = () => {
+    const fieldMajor = document.querySelector('.popup-record__major')
+    const fieldName = document.querySelector('.popup-record__select-name')
+    const fieldNameText = document.querySelector('.popup-record__select-name span')
+    const fieldInputs = document.querySelectorAll('.popup-record-option-item')
+
+    //Открыть/закрыть
+    fieldName.addEventListener('click', () => {
+      if (fieldMajor.classList.contains('active')) {
+        fieldMajor.classList.remove('active')
+      } else {
+        fieldMajor.classList.add('active')
+      }
+    })
+
+    // выбор элемента
+    fieldInputs.forEach((item) => {
+      const inputMajor = item.querySelector('input')
+      inputMajor.addEventListener('change', () => {
+        if (inputMajor.checked) fieldNameText.innerHTML = inputMajor.value
+      })
+    })
+
+    // закрытие при нажатии на input
+    fieldMajor.addEventListener('click', (e) => {
+      if (e.target.closest('label')) fieldMajor.classList.remove('active')
+    })
+  }
+  switchMajor()
+
 })
