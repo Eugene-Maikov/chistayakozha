@@ -235,4 +235,104 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   switchMajor()
 
+
+  // const myVal = () => {
+  //   // Валидация
+  //   const form = document.querySelector('.js-form')
+  //   form.addEventListener('submit', (e) => {
+  //     e.preventDefault()
+  //
+  //     const name = document.querySelector('input[name="full-name"]');
+  //     const phone = document.querySelector('input[name="phone"]');
+  //     const privacy = document.querySelector('input[type="checkbox"]');
+  //
+  //     const nameValue = name.value.trim()
+  //     const phoneValue = phone.value.trim()
+  //     const privacyValue = privacy.checked
+  //
+  //     if (nameValue === '') {
+  //       name.classList.add('error');
+  //     } else {
+  //       name.classList.remove('error');
+  //     }
+  //
+  //     if (phoneValue === '') {
+  //       phone.classList.add('error');
+  //     } else {
+  //       phone.classList.remove('error');
+  //     }
+  //
+  //     if (!privacyValue) {
+  //       privacy.classList.add('error');
+  //     } else {
+  //       privacy.classList.remove('error');
+  //     }
+  //
+  //     form.submit()
+  //   })
+  // }
+// модальные окна
+  const handleModalPopup = (btn, blockModal, blockForm) => {
+    const buttons = document.querySelectorAll(btn)
+    const modal = document.querySelector(blockModal)
+    const form = document.querySelector(blockForm)
+    const overlay = document.querySelector(".overlay")
+    const arrCloseButton = document.querySelectorAll(".js-close")
+    const selectInput = document.querySelectorAll(".js-sort-btn")
+
+    if (buttons && modal) {
+      buttons.forEach((btnItem) => {
+        btnItem.addEventListener("click", (evt) => {
+          evt.preventDefault()
+          modal.classList.add("active")
+          overlay.classList.add("active")
+          document.body.classList.add("no-scroll")
+        })
+      })
+
+      arrCloseButton.forEach((closeButton) => {
+        closeButton.addEventListener("click", (evt) => {
+          evt.preventDefault()
+          modal.classList.remove("active")
+          overlay.classList.remove("active")
+          document.body.classList.remove("no-scroll")
+          form?.reset()
+          selectInput?.forEach((elements) => {
+            elements.value = ""
+          })
+        })
+      })
+
+      overlay.addEventListener("click", (evt) => {
+        evt.preventDefault()
+        modal.classList.remove("active")
+        overlay.classList.remove("active")
+        document.body.classList.remove("no-scroll")
+        form?.reset()
+        selectInput?.forEach((elements) => {
+          elements.value = ""
+        })
+      })
+
+      if (window.screen.width > 767) {
+        document.addEventListener("keydown", (evt) => {
+          if (evt.key === "Escape") {
+            evt.preventDefault()
+            modal.classList.remove("active")
+            overlay.classList.remove("active")
+            document.body.classList.remove("no-scroll")
+            form?.reset()
+          }
+        })
+      }
+    }
+  }
+
+  handleModalPopup(".js-btn-modal", ".js-modal-record", 'form[name="form-record"]')
+
+  // Валидация и отправка формы
+  const handleFormSubmit = (formItem, popup) => {
+  }
+
+  handleFormSubmit('form[name="form-record"]', ".js-modal-record")
 })

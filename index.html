@@ -1,763 +1,767 @@
 <!doctype html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-	      name="viewport">
-	<meta content="ie=edge" http-equiv="X-UA-Compatible">
-	<title>Чистая кожа</title>
-	<link href="#" rel="shortcut icon">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-	<link href="assets/swiper/swiper-bundle.min.css" rel="stylesheet">
-	<link href="assets/css/global.css" rel="stylesheet">
-	<link href="assets/css/single-doctor.css" rel="stylesheet">
-	<link href="assets/css/modal.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>Чистая кожа</title>
+  <link href="#" rel="shortcut icon">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="assets/plugins/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/global.css" rel="stylesheet">
+  <link href="assets/css/single-doctor.css" rel="stylesheet">
+  <link href="assets/css/modal.css" rel="stylesheet">
 </head>
-<body class="no-scroll">
+<body>
 <main class="main">
-	<!--	Header - без изменений, его верстать не надо	-->
-	<!--	bread-crumbs - без изменений, его верстать не надо 	-->
+  <!--	Header - без изменений, его верстать не надо	-->
+  <!--	bread-crumbs - без изменений, его верстать не надо 	-->
 
-	<section class="doctor">
-		<div class="container">
-			<h1 class="doctor__title">Волков Михаил Владимирович</h1>
-			<div class="doctor__container">
-				<div class="doctor__inner">
-					<div class="doctor__card">
-						<div class="doctor__img">
-							<img alt="doctor image" src="assets/img/doctor.jpg">
-						</div>
-						<div class="doctor__bottom-box">
-							<div class="doctor__rating">
-								<div class="doctor__rating-left">
-									<div class="doctor__number">5.0</div>
-									<div class="doctor__reviews">
-										<a href="javascript:void(0)">3 Отзыва</a>
-									</div>
-								</div>
-								<div class="doctor__stars">
-									<div class="doctor__stars-item">
-										<svg viewBox="0 0 21 19">
-											<path
-												d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
-										</svg>
-									</div>
-									<div class="doctor__stars-item">
-										<svg viewBox="0 0 21 19">
-											<path
-												d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
-										</svg>
-									</div>
-									<div class="doctor__stars-item">
-										<svg viewBox="0 0 21 19">
-											<path
-												d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
-										</svg>
-									</div>
-									<div class="doctor__stars-item">
-										<svg viewBox="0 0 21 19">
-											<path
-												d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
-										</svg>
-									</div>
-									<div class="doctor__stars-item">
-										<svg viewBox="0 0 21 19">
-											<path
-												d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
-										</svg>
-									</div>
-								</div>
-							</div>
-							<div class="doctor__btn">
-								<a href="javascript:void(0)">Оставить отзыв</a>
-							</div>
-						</div>
-					</div>
-					<div class="doctor__info">
-						<div class="doctor__info-group">
-							<h3 class="doctor__info-title">Специальность:</h3>
-							<div class="doctor__info-text">
-								<p>Главный врач медицинского центра «Чистая кожа», врач-дерматовенеролог высшей категории, трихолог</p>
-							</div>
-						</div>
-						<div class="doctor__info-group">
-							<h3 class="doctor__info-title">Врачебный стаж</h3>
-							<div class="doctor__info-text">
-								<p>Стаж работы более 30 лет</p>
-								<p>Стаж работы руководителем медицинского учреждения 20 лет</p>
-							</div>
-						</div>
-						<div class="doctor__info-group">
-							<h3 class="doctor__info-title">Категория врача:</h3>
-							<div class="doctor__info-text">
-								<p>Высшая</p>
-							</div>
-						</div>
-						<div class="doctor__info-group">
-							<h3 class="doctor__info-title">Услуги и цены</h3>
-							<div class="doctor__info-prices">
-								<ul class="doctor__info-list">
-									<li class="doctor__info-major">
-										<span>Венеролог</span>
-										<span>от 1600₽</span>
-									</li>
-									<li class="doctor__info-major">
-										<span>Дерматолог</span>
-										<span>от 1600₽</span>
-									</li>
-									<li class="doctor__info-major">
-										<span>Трихолог</span>
-										<span>от 1600₽</span>
-									</li>
-									<li class="doctor__info-major">
-										<span>Венеролог</span>
-										<span>от 1600₽</span>
-									</li>
-									<li class="doctor__info-major">
-										<span>Дерматолог</span>
-										<span>от 1600₽</span>
-									</li>
-									<li class="doctor__info-major">
-										<span>Трихолог</span>
-										<span>от 1600₽</span>
-									</li>
-								</ul>
-							</div>
-						</div>
+  <section class="doctor">
+    <div class="container">
+      <h1 class="doctor__title">Волков Михаил Владимирович</h1>
+      <div class="doctor__container">
+        <div class="doctor__inner">
+          <div class="doctor__card">
+            <div class="doctor__img">
+              <img alt="doctor image" src="assets/img/doctor.jpg">
+            </div>
+            <div class="doctor__bottom-box">
+              <div class="doctor__rating">
+                <div class="doctor__rating-left">
+                  <div class="doctor__number">5.0</div>
+                  <div class="doctor__reviews">
+                    <a href="javascript:void(0)">3 Отзыва</a>
+                  </div>
+                </div>
+                <div class="doctor__stars">
+                  <div class="doctor__stars-item">
+                    <svg viewBox="0 0 21 19">
+                      <path
+                          d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
+                    </svg>
+                  </div>
+                  <div class="doctor__stars-item">
+                    <svg viewBox="0 0 21 19">
+                      <path
+                          d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
+                    </svg>
+                  </div>
+                  <div class="doctor__stars-item">
+                    <svg viewBox="0 0 21 19">
+                      <path
+                          d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
+                    </svg>
+                  </div>
+                  <div class="doctor__stars-item">
+                    <svg viewBox="0 0 21 19">
+                      <path
+                          d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
+                    </svg>
+                  </div>
+                  <div class="doctor__stars-item">
+                    <svg viewBox="0 0 21 19">
+                      <path
+                          d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="doctor__btn">
+                <a href="javascript:void(0)">Оставить отзыв</a>
+              </div>
+            </div>
+          </div>
+          <div class="doctor__info">
+            <div class="doctor__info-group">
+              <h3 class="doctor__info-title">Специальность:</h3>
+              <div class="doctor__info-text">
+                <p>Главный врач медицинского центра «Чистая кожа», врач-дерматовенеролог высшей категории, трихолог</p>
+              </div>
+            </div>
+            <div class="doctor__info-group">
+              <h3 class="doctor__info-title">Врачебный стаж</h3>
+              <div class="doctor__info-text">
+                <p>Стаж работы более 30 лет</p>
+                <p>Стаж работы руководителем медицинского учреждения 20 лет</p>
+              </div>
+            </div>
+            <div class="doctor__info-group">
+              <h3 class="doctor__info-title">Категория врача:</h3>
+              <div class="doctor__info-text">
+                <p>Высшая</p>
+              </div>
+            </div>
+            <div class="doctor__info-group">
+              <h3 class="doctor__info-title">Услуги и цены</h3>
+              <div class="doctor__info-prices">
+                <ul class="doctor__info-list">
+                  <li class="doctor__info-major">
+                    <span>Венеролог</span>
+                    <span>от 1600₽</span>
+                  </li>
+                  <li class="doctor__info-major">
+                    <span>Дерматолог</span>
+                    <span>от 1600₽</span>
+                  </li>
+                  <li class="doctor__info-major">
+                    <span>Трихолог</span>
+                    <span>от 1600₽</span>
+                  </li>
+                  <li class="doctor__info-major">
+                    <span>Венеролог</span>
+                    <span>от 1600₽</span>
+                  </li>
+                  <li class="doctor__info-major">
+                    <span>Дерматолог</span>
+                    <span>от 1600₽</span>
+                  </li>
+                  <li class="doctor__info-major">
+                    <span>Трихолог</span>
+                    <span>от 1600₽</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-						<!-- На мобильном экране (от 680px) ссылка заменяется на другую -->
-						<!-- Такой дизайн -->
-						<a class="doctor__info-more" href="#">Узнать подробнее о специалисте</a>
-						<a class="doctor__info-more _mobile" href="#">Узнать подробнее </a>
-					</div>
-				</div>
-				<div class="doctor__ellipse">
-					<img alt="ellipse-bg" src="assets/img/ellipse-bg.png">
-				</div>
-			</div>
-		</div>
-	</section>
+            <!-- На мобильном экране (от 680px) ссылка заменяется на другую -->
+            <!-- Такой дизайн -->
+            <a class="doctor__info-more" href="#">Узнать подробнее о специалисте</a>
+            <a class="doctor__info-more _mobile" href="#">Узнать подробнее </a>
+          </div>
+        </div>
+        <div class="doctor__ellipse">
+          <img alt="ellipse-bg" src="assets/img/ellipse-bg.png">
+        </div>
+      </div>
+    </div>
+  </section>
 
-	<section class="skill">
-		<div class="container">
-			<h2 class="single-doctor-title">Квалификация</h2>
-			<div class="skill__tabs">
-				<div class="skill__buttons">
-					<div class="skill__btn-item active" data-tab="tab1">Образование</div>
-					<div class="skill__btn-item" data-tab="tab2">Опыт работы</div>
-					<div class="skill__btn-item" data-tab="tab3">Дипломы</div>
-				</div>
-				<div class="skill__contents">
-					<div class="skill__content _dates" id="tab1">
-						<span class="skill__dates-line"></span>
-						<div class="skill__tab-name">Образование</div>
-						<ul class="skill__dates">
-							<li class="skill__dates-item">
-								<span class="skill__dates-number">1993</span>
-								<div class="skill__dates-body">
-									<h3 class="skill__dates-name">Приволжский исследовательский медицинский университет (лечебное
-										дело)</h3>
-									<p class="skill__dates-description">Базовое образование</p>
-								</div>
-							</li>
-							<li class="skill__dates-item">
-								<span class="skill__dates-number">1993</span>
-								<div class="skill__dates-body">
-									<h3 class="skill__dates-name">Приволжский исследовательский медицинский университет (лечебное
-										дело) Приволжский исследовательский медицинский университет (лечебное
-										дело) Приволжский исследовательский медицинский университет (лечебное
-										дело)</h3>
-									<p class="skill__dates-description">Базовое образование</p>
-								</div>
-							</li>
-							<li class="skill__dates-item">
-								<span class="skill__dates-number">1993</span>
-								<div class="skill__dates-body">
-									<h3 class="skill__dates-name">Приволжский исследовательский медицинский университет (лечебное
-										дело)</h3>
-									<p class="skill__dates-description">Базовое образование</p>
-								</div>
-							</li>
-							<li class="skill__dates-item">
-								<span class="skill__dates-number">1993</span>
-								<div class="skill__dates-body">
-									<h3 class="skill__dates-name">Приволжский исследовательский медицинский университет (лечебное
-										Приволжский исследовательский медицинский университет (лечебное
-										дело)</h3>
-									<p class="skill__dates-description">Базовое образование</p>
-								</div>
-							</li>
-							<li class="skill__dates-item">
-								<span class="skill__dates-number">1993</span>
-								<div class="skill__dates-body">
-									<h3 class="skill__dates-name">Приволжский исследовательский медицинский университет (лечебное
-										дело)</h3>
-									<p class="skill__dates-description">Базовое образование</p>
-								</div>
-							</li>
-							<li class="skill__dates-item">
-								<span class="skill__dates-number">1993</span>
-								<div class="skill__dates-body">
-									<h3 class="skill__dates-name">Приволжский исследовательский медицинский университет (лечебное
-										дело)</h3>
-									<p class="skill__dates-description">Базовое образование</p>
-								</div>
-							</li>
-							<li class="skill__dates-item">
-								<span class="skill__dates-number">2000</span>
-								<div class="skill__dates-body">
-									<h3 class="skill__dates-name">Приволжский исследовательский медицинский университет (лечебное
-										дело)</h3>
-									<p class="skill__dates-description">Базовое образование</p>
-								</div>
-							</li>
-							<li class="skill__dates-item">
-								<span class="skill__dates-number">2010</span>
-								<div class="skill__dates-body">
-									<h3 class="skill__dates-name">Приволжский исследовательский медицинский университет (лечебное
-										дело)</h3>
-									<p class="skill__dates-description">Базовое образование</p>
-								</div>
-							</li>
-							<li class="skill__dates-item">
-								<span class="skill__dates-number">2015</span>
-								<div class="skill__dates-body">
-									<h3 class="skill__dates-name">Приволжский исследовательский медицинский университет (лечебное
-										дело)</h3>
-									<p class="skill__dates-description">Базовое образование</p>
-								</div>
-							</li>
-							<li class="skill__dates-item">
-								<span class="skill__dates-number">2020</span>
-								<div class="skill__dates-body">
-									<h3 class="skill__dates-name">Приволжский исследовательский медицинский университет (лечебное
-										дело)</h3>
-									<p class="skill__dates-description">Базовое образование</p>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<div class="skill__content _dates _long-date" id="tab2">
-						<span class="skill__dates-line"></span>
-						<div class="skill__tab-name">Опыт работы</div>
-						<ul class="skill__dates">
-							<li class="skill__dates-item">
-								<span class="skill__dates-number">2000 — 2005</span>
-								<div class="skill__dates-body">
-									<h3 class="skill__dates-name">Салон красоты «Аврора»</h3>
-									<p class="skill__dates-description">косметолог</p>
-								</div>
-							</li>
-							<li class="skill__dates-item">
-								<span class="skill__dates-number">2007 — 2011</span>
-								<div class="skill__dates-body">
-									<h3 class="skill__dates-name">Кожно-венерологический диспансер г.Дзержинска</h3>
-									<p class="skill__dates-description">Врач-косметолог, дерматовенеролог</p>
-								</div>
-							</li>
-							<li class="skill__dates-item">
-								<span class="skill__dates-number">2011 — 2013</span>
-								<div class="skill__dates-body">
-									<h3 class="skill__dates-name">Сеть клиник «Линлайн»</h3>
-									<p class="skill__dates-description">Врач-косметолог</p>
-								</div>
-							</li>
-							<li class="skill__dates-item">
-								<span class="skill__dates-number">2000 — 2005</span>
-								<div class="skill__dates-body">
-									<h3 class="skill__dates-name">Салон красоты «Аврора»</h3>
-									<p class="skill__dates-description">косметолог</p>
-								</div>
-							</li>
-							<li class="skill__dates-item">
-								<span class="skill__dates-number">2007 — 2011</span>
-								<div class="skill__dates-body">
-									<h3 class="skill__dates-name">Кожно-венерологический диспансер г.Дзержинска</h3>
-									<p class="skill__dates-description">Врач-косметолог, дерматовенеролог</p>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<div class="skill__content" id="tab3">
-						<div class="skill__tab-name">Дипломы</div>
-						<ul class="skill__images">
-							<li class="skill__images-item">
-								<img alt="Диплом" src="assets/img/skill-1.jpg">
-							</li>
-							<li class="skill__images-item">
-								<img alt="Диплом" src="assets/img/skill-2.jpg">
-							</li>
-							<li class="skill__images-item">
-								<img alt="Диплом" src="assets/img/skill-1.jpg">
-							</li>
-							<li class="skill__images-item">
-								<img alt="Диплом" src="assets/img/skill-2.jpg">
-							</li>
-							<li class="skill__images-item">
-								<img alt="Диплом" src="assets/img/skill-1.jpg">
-							</li>
-							<li class="skill__images-item">
-								<img alt="Диплом" src="assets/img/skill-2.jpg">
-							</li>
-							<li class="skill__images-item">
-								<img alt="Диплом" src="assets/img/skill-1.jpg">
-							</li>
-							<li class="skill__images-item">
-								<img alt="Диплом" src="assets/img/skill-2.jpg">
-							</li>
+  <section class="skill">
+    <div class="container">
+      <h2 class="single-doctor-title">Квалификация</h2>
+      <div class="skill__tabs">
+        <div class="skill__buttons">
+          <div class="skill__btn-item active" data-tab="tab1">Образование</div>
+          <div class="skill__btn-item" data-tab="tab2">Опыт работы</div>
+          <div class="skill__btn-item" data-tab="tab3">Дипломы</div>
+        </div>
+        <div class="skill__contents">
+          <div class="skill__content _dates" id="tab1">
+            <span class="skill__dates-line"></span>
+            <div class="skill__tab-name">Образование</div>
+            <ul class="skill__dates">
+              <li class="skill__dates-item">
+                <span class="skill__dates-number">1993</span>
+                <div class="skill__dates-body">
+                  <h3 class="skill__dates-name">Приволжский исследовательский медицинский университет (лечебное
+                    дело)</h3>
+                  <p class="skill__dates-description">Базовое образование</p>
+                </div>
+              </li>
+              <li class="skill__dates-item">
+                <span class="skill__dates-number">1993</span>
+                <div class="skill__dates-body">
+                  <h3 class="skill__dates-name">Приволжский исследовательский медицинский университет (лечебное
+                    дело) Приволжский исследовательский медицинский университет (лечебное
+                    дело) Приволжский исследовательский медицинский университет (лечебное
+                    дело)</h3>
+                  <p class="skill__dates-description">Базовое образование</p>
+                </div>
+              </li>
+              <li class="skill__dates-item">
+                <span class="skill__dates-number">1993</span>
+                <div class="skill__dates-body">
+                  <h3 class="skill__dates-name">Приволжский исследовательский медицинский университет (лечебное
+                    дело)</h3>
+                  <p class="skill__dates-description">Базовое образование</p>
+                </div>
+              </li>
+              <li class="skill__dates-item">
+                <span class="skill__dates-number">1993</span>
+                <div class="skill__dates-body">
+                  <h3 class="skill__dates-name">Приволжский исследовательский медицинский университет (лечебное
+                    Приволжский исследовательский медицинский университет (лечебное
+                    дело)</h3>
+                  <p class="skill__dates-description">Базовое образование</p>
+                </div>
+              </li>
+              <li class="skill__dates-item">
+                <span class="skill__dates-number">1993</span>
+                <div class="skill__dates-body">
+                  <h3 class="skill__dates-name">Приволжский исследовательский медицинский университет (лечебное
+                    дело)</h3>
+                  <p class="skill__dates-description">Базовое образование</p>
+                </div>
+              </li>
+              <li class="skill__dates-item">
+                <span class="skill__dates-number">1993</span>
+                <div class="skill__dates-body">
+                  <h3 class="skill__dates-name">Приволжский исследовательский медицинский университет (лечебное
+                    дело)</h3>
+                  <p class="skill__dates-description">Базовое образование</p>
+                </div>
+              </li>
+              <li class="skill__dates-item">
+                <span class="skill__dates-number">2000</span>
+                <div class="skill__dates-body">
+                  <h3 class="skill__dates-name">Приволжский исследовательский медицинский университет (лечебное
+                    дело)</h3>
+                  <p class="skill__dates-description">Базовое образование</p>
+                </div>
+              </li>
+              <li class="skill__dates-item">
+                <span class="skill__dates-number">2010</span>
+                <div class="skill__dates-body">
+                  <h3 class="skill__dates-name">Приволжский исследовательский медицинский университет (лечебное
+                    дело)</h3>
+                  <p class="skill__dates-description">Базовое образование</p>
+                </div>
+              </li>
+              <li class="skill__dates-item">
+                <span class="skill__dates-number">2015</span>
+                <div class="skill__dates-body">
+                  <h3 class="skill__dates-name">Приволжский исследовательский медицинский университет (лечебное
+                    дело)</h3>
+                  <p class="skill__dates-description">Базовое образование</p>
+                </div>
+              </li>
+              <li class="skill__dates-item">
+                <span class="skill__dates-number">2020</span>
+                <div class="skill__dates-body">
+                  <h3 class="skill__dates-name">Приволжский исследовательский медицинский университет (лечебное
+                    дело)</h3>
+                  <p class="skill__dates-description">Базовое образование</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="skill__content _dates _long-date" id="tab2">
+            <span class="skill__dates-line"></span>
+            <div class="skill__tab-name">Опыт работы</div>
+            <ul class="skill__dates">
+              <li class="skill__dates-item">
+                <span class="skill__dates-number">2000 — 2005</span>
+                <div class="skill__dates-body">
+                  <h3 class="skill__dates-name">Салон красоты «Аврора»</h3>
+                  <p class="skill__dates-description">косметолог</p>
+                </div>
+              </li>
+              <li class="skill__dates-item">
+                <span class="skill__dates-number">2007 — 2011</span>
+                <div class="skill__dates-body">
+                  <h3 class="skill__dates-name">Кожно-венерологический диспансер г.Дзержинска</h3>
+                  <p class="skill__dates-description">Врач-косметолог, дерматовенеролог</p>
+                </div>
+              </li>
+              <li class="skill__dates-item">
+                <span class="skill__dates-number">2011 — 2013</span>
+                <div class="skill__dates-body">
+                  <h3 class="skill__dates-name">Сеть клиник «Линлайн»</h3>
+                  <p class="skill__dates-description">Врач-косметолог</p>
+                </div>
+              </li>
+              <li class="skill__dates-item">
+                <span class="skill__dates-number">2000 — 2005</span>
+                <div class="skill__dates-body">
+                  <h3 class="skill__dates-name">Салон красоты «Аврора»</h3>
+                  <p class="skill__dates-description">косметолог</p>
+                </div>
+              </li>
+              <li class="skill__dates-item">
+                <span class="skill__dates-number">2007 — 2011</span>
+                <div class="skill__dates-body">
+                  <h3 class="skill__dates-name">Кожно-венерологический диспансер г.Дзержинска</h3>
+                  <p class="skill__dates-description">Врач-косметолог, дерматовенеролог</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="skill__content" id="tab3">
+            <div class="skill__tab-name">Дипломы</div>
+            <ul class="skill__images">
+              <li class="skill__images-item">
+                <img alt="Диплом" src="assets/img/skill-1.jpg">
+              </li>
+              <li class="skill__images-item">
+                <img alt="Диплом" src="assets/img/skill-2.jpg">
+              </li>
+              <li class="skill__images-item">
+                <img alt="Диплом" src="assets/img/skill-1.jpg">
+              </li>
+              <li class="skill__images-item">
+                <img alt="Диплом" src="assets/img/skill-2.jpg">
+              </li>
+              <li class="skill__images-item">
+                <img alt="Диплом" src="assets/img/skill-1.jpg">
+              </li>
+              <li class="skill__images-item">
+                <img alt="Диплом" src="assets/img/skill-2.jpg">
+              </li>
+              <li class="skill__images-item">
+                <img alt="Диплом" src="assets/img/skill-1.jpg">
+              </li>
+              <li class="skill__images-item">
+                <img alt="Диплом" src="assets/img/skill-2.jpg">
+              </li>
 
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-	<section class="work">
-		<div class="container">
-			<div class="swiper work__slider">
-				<div class="work__head">
-					<h2 class="single-doctor-title">Работы</h2>
-					<div class="work__buttons">
-						<div class="slider-btn-prev">
-							<svg viewBox="0 0 512 512">
-								<path
-									d="M353,450a15,15,0,0,1-10.61-4.39L157.5,260.71a15,15,0,0,1,0-21.21L342.39,54.6a15,15,0,1,1,21.22,21.21L189.32,250.1,363.61,424.39A15,15,0,0,1,353,450Z"/>
-							</svg>
-						</div>
-						<div class="slider-btn-next">
-							<svg viewBox="0 0 512 512">
-								<path
-									d="M353,450a15,15,0,0,1-10.61-4.39L157.5,260.71a15,15,0,0,1,0-21.21L342.39,54.6a15,15,0,1,1,21.22,21.21L189.32,250.1,363.61,424.39A15,15,0,0,1,353,450Z"/>
-							</svg>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-wrapper">
-					<div class="swiper-slide work__image"><img alt="слайд с примером работы" src="assets/img/work1.jpg"></div>
-					<div class="swiper-slide work__image"><img alt="слайд с примером работы" src="assets/img/work2.jpg"></div>
-					<div class="swiper-slide work__image"><img alt="слайд с примером работы" src="assets/img/work3.jpg"></div>
-					<div class="swiper-slide work__image"><img alt="слайд с примером работы" src="assets/img/work1.jpg"></div>
-					<div class="swiper-slide work__image"><img alt="слайд с примером работы" src="assets/img/work2.jpg"></div>
-					<div class="swiper-slide work__image"><img alt="слайд с примером работы" src="assets/img/work3.jpg"></div>
-				</div>
-			</div>
-		</div>
-	</section>
+  <section class="work">
+    <div class="container">
+      <div class="swiper work__slider">
+        <div class="work__head">
+          <h2 class="single-doctor-title">Работы</h2>
+          <div class="work__buttons">
+            <div class="slider-btn-prev">
+              <svg viewBox="0 0 512 512">
+                <path
+                    d="M353,450a15,15,0,0,1-10.61-4.39L157.5,260.71a15,15,0,0,1,0-21.21L342.39,54.6a15,15,0,1,1,21.22,21.21L189.32,250.1,363.61,424.39A15,15,0,0,1,353,450Z"/>
+              </svg>
+            </div>
+            <div class="slider-btn-next">
+              <svg viewBox="0 0 512 512">
+                <path
+                    d="M353,450a15,15,0,0,1-10.61-4.39L157.5,260.71a15,15,0,0,1,0-21.21L342.39,54.6a15,15,0,1,1,21.22,21.21L189.32,250.1,363.61,424.39A15,15,0,0,1,353,450Z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide work__image"><img alt="слайд с примером работы" src="assets/img/work1.jpg"></div>
+          <div class="swiper-slide work__image"><img alt="слайд с примером работы" src="assets/img/work2.jpg"></div>
+          <div class="swiper-slide work__image"><img alt="слайд с примером работы" src="assets/img/work3.jpg"></div>
+          <div class="swiper-slide work__image"><img alt="слайд с примером работы" src="assets/img/work1.jpg"></div>
+          <div class="swiper-slide work__image"><img alt="слайд с примером работы" src="assets/img/work2.jpg"></div>
+          <div class="swiper-slide work__image"><img alt="слайд с примером работы" src="assets/img/work3.jpg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-	<section class="reviews">
-		<div class="container">
-			<div class="swiper reviews__slider">
-				<div class="reviews__head">
-					<h2 class="single-doctor-title">Отзывы</h2>
-					<div class="reviews__buttons">
-						<div class="slider-btn-prev">
-							<svg viewBox="0 0 512 512">
-								<path
-									d="M353,450a15,15,0,0,1-10.61-4.39L157.5,260.71a15,15,0,0,1,0-21.21L342.39,54.6a15,15,0,1,1,21.22,21.21L189.32,250.1,363.61,424.39A15,15,0,0,1,353,450Z"/>
-							</svg>
-						</div>
-						<div class="slider-btn-next">
-							<svg viewBox="0 0 512 512">
-								<path
-									d="M353,450a15,15,0,0,1-10.61-4.39L157.5,260.71a15,15,0,0,1,0-21.21L342.39,54.6a15,15,0,1,1,21.22,21.21L189.32,250.1,363.61,424.39A15,15,0,0,1,353,450Z"/>
-							</svg>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="reviews__item">
-							<div class="reviews__item-head">
-								<div class="reviews__item-avatar">
-									<img alt="" src="assets/img/avatar1.png">
-								</div>
-								<div class="reviews__item-right">
-									<h3 class="reviews__item-name">Иванов Иван Иванович</h3>
-									<div class="reviews__item-rating">
-										<div class="reviews__item-star">
-											<svg viewBox="0 0 21 19">
-												<path
-													d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
-											</svg>
-										</div>
-										<div class="reviews__item-star">
-											<svg viewBox="0 0 21 19">
-												<path
-													d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
-											</svg>
-										</div>
-										<div class="reviews__item-star">
-											<svg viewBox="0 0 21 19">
-												<path
-													d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
-											</svg>
-										</div>
-										<div class="reviews__item-star">
-											<svg viewBox="0 0 21 19">
-												<path
-													d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
-											</svg>
-										</div>
-										<div class="reviews__item-star">
-											<svg viewBox="0 0 21 19">
-												<path
-													d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
-											</svg>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="reviews__item-body">
-								<div class="reviews__item-description">
-									<p>У меня появились папилломы на шее.</p>
-								</div>
-								<div class="reviews__item-more">Читать далее</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="reviews__item">
-							<div class="reviews__item-head">
-								<div class="reviews__item-avatar">
-									<img alt="" src="assets/img/avatar1.png">
-								</div>
-								<div class="reviews__item-right">
-									<h3 class="reviews__item-name">Константинов Константин Константинопольский</h3>
-									<div class="reviews__item-rating">
-										<div class="reviews__item-star">
-											<svg viewBox="0 0 21 19">
-												<path
-													d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
-											</svg>
-										</div>
-										<div class="reviews__item-star">
-											<svg viewBox="0 0 21 19">
-												<path
-													d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
-											</svg>
-										</div>
-										<div class="reviews__item-star">
-											<svg viewBox="0 0 21 19">
-												<path
-													d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
-											</svg>
-										</div>
-										<div class="reviews__item-star">
-											<svg viewBox="0 0 21 19">
-												<path
-													d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
-											</svg>
-										</div>
-										<div class="reviews__item-star">
-											<svg viewBox="0 0 21 19">
-												<path
-													d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
-											</svg>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="reviews__item-body">
-								<div class="reviews__item-description">
-									<p>У меня появились папилломы на шее. Решила обратиться в центр по удалениям "Чистая кожа". Очень
-										боялась боли. Но мои опасения были напрасны. Меня встретил очень приветливый и внимательный врач.
-										Процедура выполнялась лазером, чувствовала небольшое пощипывание
-										во время процедуры. После удаления были даны подробные. У меня появились папилломы на шее. Решила
-										обратиться в центр по удалениям "Чистая кожа". Очень
-										боялась боли. Но мои опасения были напрасны. Меня встретил очень приветливый и внимательный врач.
-										Процедура выполнялась лазером, чувствовала небольшое пощипывание
-										во время процедуры. После удаления были даны подробные...</p>
-								</div>
-								<div class="reviews__item-more">Читать далее</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="reviews__item">
-							<div class="reviews__item-head">
-								<div class="reviews__item-avatar">
-									<img alt="" src="assets/img/avatar1.png">
-								</div>
-								<div class="reviews__item-right">
-									<h3 class="reviews__item-name">Батищев Андрей Евгеньевич</h3>
-									<div class="reviews__item-rating">
-										<div class="reviews__item-star">
-											<svg viewBox="0 0 21 19">
-												<path
-													d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
-											</svg>
-										</div>
-										<div class="reviews__item-star">
-											<svg viewBox="0 0 21 19">
-												<path
-													d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
-											</svg>
-										</div>
-										<div class="reviews__item-star">
-											<svg viewBox="0 0 21 19">
-												<path
-													d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
-											</svg>
-										</div>
-										<div class="reviews__item-star">
-											<svg viewBox="0 0 21 19">
-												<path
-													d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
-											</svg>
-										</div>
-										<div class="reviews__item-star">
-											<svg viewBox="0 0 21 19">
-												<path
-													d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
-											</svg>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="reviews__item-body">
-								<div class="reviews__item-description">
-									<p>У меня появились папилломы на шее. Решила обратиться в центр по удалениям "Чистая кожа". Очень
-										боялась боли. Но мои опасения были напрасны. Меня встретил очень приветливый и внимательный
-										врач.</p>
-								</div>
-								<div class="reviews__item-more">Читать далее</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="reviews__item">
-							<div class="reviews__item-head">
-								<div class="reviews__item-avatar">
-									<img alt="" src="assets/img/avatar1.png">
-								</div>
-								<div class="reviews__item-right">
-									<h3 class="reviews__item-name">Иванов Иван Иванович</h3>
-									<div class="reviews__item-rating">
-										<div class="reviews__item-star">
-											<svg viewBox="0 0 21 19">
-												<path
-													d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
-											</svg>
-										</div>
-										<div class="reviews__item-star">
-											<svg viewBox="0 0 21 19">
-												<path
-													d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
-											</svg>
-										</div>
-										<div class="reviews__item-star">
-											<svg viewBox="0 0 21 19">
-												<path
-													d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
-											</svg>
-										</div>
-										<div class="reviews__item-star">
-											<svg viewBox="0 0 21 19">
-												<path
-													d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
-											</svg>
-										</div>
-										<div class="reviews__item-star">
-											<svg viewBox="0 0 21 19">
-												<path
-													d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
-											</svg>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="reviews__item-body">
-								<div class="reviews__item-description">
-									<p>У меня появились папилломы на шее. Решила обратиться в центр по удалениям "Чистая кожа". Очень
-										боялась боли. Но мои опасения были напрасны. Меня встретил очень приветливый и внимательный врач.
-										Процедура выполнялась лазером, чувствовала небольшое пощипывание
-										во время процедуры. После удаления были даны подробные...</p>
-								</div>
-								<div class="reviews__item-more">Читать далее</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="reviews__btn">
-				<a href="javascript:void(0)">Оставить отзыв</a>
-			</div>
-		</div>
-	</section>
+  <section class="reviews">
+    <div class="container">
+      <div class="swiper reviews__slider">
+        <div class="reviews__head">
+          <h2 class="single-doctor-title">Отзывы</h2>
+          <div class="reviews__buttons">
+            <div class="slider-btn-prev">
+              <svg viewBox="0 0 512 512">
+                <path
+                    d="M353,450a15,15,0,0,1-10.61-4.39L157.5,260.71a15,15,0,0,1,0-21.21L342.39,54.6a15,15,0,1,1,21.22,21.21L189.32,250.1,363.61,424.39A15,15,0,0,1,353,450Z"/>
+              </svg>
+            </div>
+            <div class="slider-btn-next">
+              <svg viewBox="0 0 512 512">
+                <path
+                    d="M353,450a15,15,0,0,1-10.61-4.39L157.5,260.71a15,15,0,0,1,0-21.21L342.39,54.6a15,15,0,1,1,21.22,21.21L189.32,250.1,363.61,424.39A15,15,0,0,1,353,450Z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="reviews__item">
+              <div class="reviews__item-head">
+                <div class="reviews__item-avatar">
+                  <img alt="" src="assets/img/avatar1.png">
+                </div>
+                <div class="reviews__item-right">
+                  <h3 class="reviews__item-name">Иванов Иван Иванович</h3>
+                  <div class="reviews__item-rating">
+                    <div class="reviews__item-star">
+                      <svg viewBox="0 0 21 19">
+                        <path
+                            d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
+                      </svg>
+                    </div>
+                    <div class="reviews__item-star">
+                      <svg viewBox="0 0 21 19">
+                        <path
+                            d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
+                      </svg>
+                    </div>
+                    <div class="reviews__item-star">
+                      <svg viewBox="0 0 21 19">
+                        <path
+                            d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
+                      </svg>
+                    </div>
+                    <div class="reviews__item-star">
+                      <svg viewBox="0 0 21 19">
+                        <path
+                            d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
+                      </svg>
+                    </div>
+                    <div class="reviews__item-star">
+                      <svg viewBox="0 0 21 19">
+                        <path
+                            d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__item-body">
+                <div class="reviews__item-description">
+                  <p>У меня появились папилломы на шее.</p>
+                </div>
+                <div class="reviews__item-more">Читать далее</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="reviews__item">
+              <div class="reviews__item-head">
+                <div class="reviews__item-avatar">
+                  <img alt="" src="assets/img/avatar1.png">
+                </div>
+                <div class="reviews__item-right">
+                  <h3 class="reviews__item-name">Константинов Константин Константинопольский</h3>
+                  <div class="reviews__item-rating">
+                    <div class="reviews__item-star">
+                      <svg viewBox="0 0 21 19">
+                        <path
+                            d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
+                      </svg>
+                    </div>
+                    <div class="reviews__item-star">
+                      <svg viewBox="0 0 21 19">
+                        <path
+                            d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
+                      </svg>
+                    </div>
+                    <div class="reviews__item-star">
+                      <svg viewBox="0 0 21 19">
+                        <path
+                            d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
+                      </svg>
+                    </div>
+                    <div class="reviews__item-star">
+                      <svg viewBox="0 0 21 19">
+                        <path
+                            d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
+                      </svg>
+                    </div>
+                    <div class="reviews__item-star">
+                      <svg viewBox="0 0 21 19">
+                        <path
+                            d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__item-body">
+                <div class="reviews__item-description">
+                  <p>У меня появились папилломы на шее. Решила обратиться в центр по удалениям "Чистая кожа". Очень
+                    боялась боли. Но мои опасения были напрасны. Меня встретил очень приветливый и внимательный врач.
+                    Процедура выполнялась лазером, чувствовала небольшое пощипывание
+                    во время процедуры. После удаления были даны подробные. У меня появились папилломы на шее. Решила
+                    обратиться в центр по удалениям "Чистая кожа". Очень
+                    боялась боли. Но мои опасения были напрасны. Меня встретил очень приветливый и внимательный врач.
+                    Процедура выполнялась лазером, чувствовала небольшое пощипывание
+                    во время процедуры. После удаления были даны подробные...</p>
+                </div>
+                <div class="reviews__item-more">Читать далее</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="reviews__item">
+              <div class="reviews__item-head">
+                <div class="reviews__item-avatar">
+                  <img alt="" src="assets/img/avatar1.png">
+                </div>
+                <div class="reviews__item-right">
+                  <h3 class="reviews__item-name">Батищев Андрей Евгеньевич</h3>
+                  <div class="reviews__item-rating">
+                    <div class="reviews__item-star">
+                      <svg viewBox="0 0 21 19">
+                        <path
+                            d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
+                      </svg>
+                    </div>
+                    <div class="reviews__item-star">
+                      <svg viewBox="0 0 21 19">
+                        <path
+                            d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
+                      </svg>
+                    </div>
+                    <div class="reviews__item-star">
+                      <svg viewBox="0 0 21 19">
+                        <path
+                            d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
+                      </svg>
+                    </div>
+                    <div class="reviews__item-star">
+                      <svg viewBox="0 0 21 19">
+                        <path
+                            d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
+                      </svg>
+                    </div>
+                    <div class="reviews__item-star">
+                      <svg viewBox="0 0 21 19">
+                        <path
+                            d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__item-body">
+                <div class="reviews__item-description">
+                  <p>У меня появились папилломы на шее. Решила обратиться в центр по удалениям "Чистая кожа". Очень
+                    боялась боли. Но мои опасения были напрасны. Меня встретил очень приветливый и внимательный
+                    врач.</p>
+                </div>
+                <div class="reviews__item-more">Читать далее</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="reviews__item">
+              <div class="reviews__item-head">
+                <div class="reviews__item-avatar">
+                  <img alt="" src="assets/img/avatar1.png">
+                </div>
+                <div class="reviews__item-right">
+                  <h3 class="reviews__item-name">Иванов Иван Иванович</h3>
+                  <div class="reviews__item-rating">
+                    <div class="reviews__item-star">
+                      <svg viewBox="0 0 21 19">
+                        <path
+                            d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
+                      </svg>
+                    </div>
+                    <div class="reviews__item-star">
+                      <svg viewBox="0 0 21 19">
+                        <path
+                            d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
+                      </svg>
+                    </div>
+                    <div class="reviews__item-star">
+                      <svg viewBox="0 0 21 19">
+                        <path
+                            d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
+                      </svg>
+                    </div>
+                    <div class="reviews__item-star">
+                      <svg viewBox="0 0 21 19">
+                        <path
+                            d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
+                      </svg>
+                    </div>
+                    <div class="reviews__item-star">
+                      <svg viewBox="0 0 21 19">
+                        <path
+                            d="M9.54894 0.927049C9.8483 0.0057385 11.1517 0.0057404 11.4511 0.927051L13.0819 5.9463C13.2158 6.35833 13.5997 6.63729 14.033 6.63729H19.3105C20.2792 6.63729 20.682 7.8769 19.8983 8.4463L15.6287 11.5484C15.2782 11.803 15.1315 12.2544 15.2654 12.6664L16.8963 17.6857C17.1956 18.607 16.1411 19.3731 15.3574 18.8037L11.0878 15.7016C10.7373 15.447 10.2627 15.447 9.91221 15.7016L5.64258 18.8037C4.85887 19.3731 3.80439 18.607 4.10374 17.6857L5.7346 12.6664C5.86847 12.2544 5.72181 11.803 5.37132 11.5484L1.10169 8.4463C0.317977 7.8769 0.720754 6.63729 1.68948 6.63729H6.96703C7.40026 6.63729 7.78421 6.35833 7.91809 5.9463L9.54894 0.927049Z"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__item-body">
+                <div class="reviews__item-description">
+                  <p>У меня появились папилломы на шее. Решила обратиться в центр по удалениям "Чистая кожа". Очень
+                    боялась боли. Но мои опасения были напрасны. Меня встретил очень приветливый и внимательный врач.
+                    Процедура выполнялась лазером, чувствовала небольшое пощипывание
+                    во время процедуры. После удаления были даны подробные...</p>
+                </div>
+                <div class="reviews__item-more">Читать далее</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews__btn">
+        <a href="javascript:void(0)">Оставить отзыв</a>
+      </div>
+    </div>
+  </section>
 
-	<section class="about-doctor">
-		<div class="container">
-			<h2 class="single-doctor-title">Видео о враче</h2>
-			<div class="about-doctor__video">
-				<div class="youtube-player btn-dis">
-					<div class="about-doctor__btn"></div>
-					<div class="about-doctor__link">https://www.youtube.com/embed/qjufkgTajeU?si=wFRKtNT0F5p5cjf2</div>
-				</div>
-			</div>
-		</div>
-	</section>
+  <section class="about-doctor">
+    <div class="container">
+      <h2 class="single-doctor-title">Видео о враче</h2>
+      <div class="about-doctor__video">
+        <div class="youtube-player btn-dis">
+          <div class="about-doctor__btn"></div>
+          <div class="about-doctor__link">https://www.youtube.com/embed/qjufkgTajeU?si=wFRKtNT0F5p5cjf2</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <button class="js-btn-modal">Записаться</button>
 
-	<section class="other-doctors">
-		<div class="container">
-			<div class="other-doctors__head">
-				<h2 class="single-doctor-title">Другие врачи</h2>
-				<div class="other-doctors__all">
-					<a href="javascript:void(0)">Все врачи</a>
-				</div>
-			</div>
-			<div class="swiper other-doctors__slider">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="other-doctors__item">
-							<div class="other-doctors__image">
-								<img alt="" src="assets/img/doctor-slide-1.webp">
-							</div>
-							<div class="other-doctors__content">
-								<div class="other-doctors__titles">
-									<h3 class="other-doctors__name">Олексенко Марина Александровна</h3>
-									<span class="other-doctors__major">Врач-дерматолог</span>
-								</div>
-								<div class="other-doctors__btn">
-									<a href="javascript:void(0)">Записаться</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="other-doctors__item">
-							<div class="other-doctors__image">
-								<img alt="" src="assets/img/doctor-slide-2.jpg">
-							</div>
-							<div class="other-doctors__content">
-								<div class="other-doctors__titles">
-									<h3 class="other-doctors__name">Пластинин Ярослав Игоревич</h3>
-									<span class="other-doctors__major">Врач-онколог, хирург, высшая категория</span>
-								</div>
-								<div class="other-doctors__btn">
-									<a href="javascript:void(0)">Записаться</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="other-doctors__item">
-							<div class="other-doctors__image">
-								<img alt="" src="assets/img/doctor-slide-1.webp">
-							</div>
-							<div class="other-doctors__content">
-								<div class="other-doctors__titles">
-									<h3 class="other-doctors__name">Усков Василий Владимирович</h3>
-									<span class="other-doctors__major">Врач-дерматолог</span>
-								</div>
-								<div class="other-doctors__btn">
-									<a href="javascript:void(0)">Записаться</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="other-doctors__item">
-							<div class="other-doctors__image">
-								<img alt="" src="assets/img/doctor-slide-1.webp">
-							</div>
-							<div class="other-doctors__content">
-								<div class="other-doctors__titles">
-									<h3 class="other-doctors__name">Олексенко Марина Александровна</h3>
-									<span class="other-doctors__major">Врач-дерматолог</span>
-								</div>
-								<div class="other-doctors__btn">
-									<a href="javascript:void(0)">Записаться</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="other-doctors__buttons">
-					<div class="slider-btn-prev">
-						<svg viewBox="0 0 512 512">
-							<path
-								d="M353,450a15,15,0,0,1-10.61-4.39L157.5,260.71a15,15,0,0,1,0-21.21L342.39,54.6a15,15,0,1,1,21.22,21.21L189.32,250.1,363.61,424.39A15,15,0,0,1,353,450Z"/>
-						</svg>
-					</div>
-					<div class="slider-btn-next">
-						<svg viewBox="0 0 512 512">
-							<path
-								d="M353,450a15,15,0,0,1-10.61-4.39L157.5,260.71a15,15,0,0,1,0-21.21L342.39,54.6a15,15,0,1,1,21.22,21.21L189.32,250.1,363.61,424.39A15,15,0,0,1,353,450Z"/>
-						</svg>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+  <section class="other-doctors">
+    <div class="container">
+      <div class="other-doctors__head">
+        <h2 class="single-doctor-title">Другие врачи</h2>
+        <div class="other-doctors__all">
+          <a href="javascript:void(0)">Все врачи</a>
+        </div>
+      </div>
+      <div class="swiper other-doctors__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="other-doctors__item">
+              <div class="other-doctors__image">
+                <img alt="" src="assets/img/doctor-slide-1.webp">
+              </div>
+              <div class="other-doctors__content">
+                <div class="other-doctors__titles">
+                  <h3 class="other-doctors__name">Олексенко Марина Александровна</h3>
+                  <span class="other-doctors__major">Врач-дерматолог</span>
+                </div>
+                <div class="other-doctors__btn">
+                  <a href="javascript:void(0)">Записаться</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="other-doctors__item">
+              <div class="other-doctors__image">
+                <img alt="" src="assets/img/doctor-slide-2.jpg">
+              </div>
+              <div class="other-doctors__content">
+                <div class="other-doctors__titles">
+                  <h3 class="other-doctors__name">Пластинин Ярослав Игоревич</h3>
+                  <span class="other-doctors__major">Врач-онколог, хирург, высшая категория</span>
+                </div>
+                <div class="other-doctors__btn">
+                  <a href="javascript:void(0)">Записаться</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="other-doctors__item">
+              <div class="other-doctors__image">
+                <img alt="" src="assets/img/doctor-slide-1.webp">
+              </div>
+              <div class="other-doctors__content">
+                <div class="other-doctors__titles">
+                  <h3 class="other-doctors__name">Усков Василий Владимирович</h3>
+                  <span class="other-doctors__major">Врач-дерматолог</span>
+                </div>
+                <div class="other-doctors__btn">
+                  <a href="javascript:void(0)">Записаться</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="other-doctors__item">
+              <div class="other-doctors__image">
+                <img alt="" src="assets/img/doctor-slide-1.webp">
+              </div>
+              <div class="other-doctors__content">
+                <div class="other-doctors__titles">
+                  <h3 class="other-doctors__name">Олексенко Марина Александровна</h3>
+                  <span class="other-doctors__major">Врач-дерматолог</span>
+                </div>
+                <div class="other-doctors__btn">
+                  <a href="javascript:void(0)">Записаться</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="other-doctors__buttons">
+          <div class="slider-btn-prev">
+            <svg viewBox="0 0 512 512">
+              <path
+                  d="M353,450a15,15,0,0,1-10.61-4.39L157.5,260.71a15,15,0,0,1,0-21.21L342.39,54.6a15,15,0,1,1,21.22,21.21L189.32,250.1,363.61,424.39A15,15,0,0,1,353,450Z"/>
+            </svg>
+          </div>
+          <div class="slider-btn-next">
+            <svg viewBox="0 0 512 512">
+              <path
+                  d="M353,450a15,15,0,0,1-10.61-4.39L157.5,260.71a15,15,0,0,1,0-21.21L342.39,54.6a15,15,0,1,1,21.22,21.21L189.32,250.1,363.61,424.39A15,15,0,0,1,353,450Z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-	<!--	Footer - без изменений, его верстать не надо	-->
+
+  <!--	Footer - без изменений, его верстать не надо	-->
 </main>
 
-<div class="popup-record js-modal-record active">
-	<!--		<div class="popup-modal">-->
-	<!--			<div class="popup-modal__title">Успешно!</div>-->
-	<!--		</div>-->
-	<div class="popup-record__inner">
-		<div class="popup-record__block">
-			<h4 class="popup-record__title">Запись на прием</h4>
-			<form action="#1" class="form-record js-form" method="get" name="form-record" novalidate>
-				<div class="popup-record__box">
-					<div class="popup-record__form-group">
-						<div class="popup-record__major">
-							<div class="popup-record__select-name">
-								<span>Специализация</span>
-								<svg viewBox="0 0 19 11" fill="none">
-									<path d="M1.375 1.25L9.5 9.375L17.625 1.25" stroke="#757C9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-								</svg>
-							</div>
-							<div class="popup-record-option-list">
-								<div class="popup-record-option-item">
-									<label for="major-1">Трихология</label>
-									<input type="radio" name="major" id="major-1" value="Трихология">
-								</div>
-								<div class="popup-record-option-item">
-									<label for="major-2">Венерология</label>
-									<input type="radio" name="major" id="major-2" value="Венерология">
-								</div>
-								<div class="popup-record-option-item">
-									<label for="major-3">Дерматология</label>
-									<input type="radio" name="major" id="major-3" value="Дерматология">
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="popup-record__form-group">
-						<input class="popup-record__input error" name="full-name" placeholder="ФИО" required type="text">
-					</div>
-					<div class="popup-record__form-group">
-						<input class="popup-record__input error" name="phone" placeholder="Телефон" required type="tel">
-					</div>
-					<div class="popup-record__form-group _privacy">
-						<label for="privacy">
-							<input class="error" checked id="privacy" type="checkbox" value="yes">
-							<p>
-								<span>Заполняя форму на веб-сайте, вы соглашаетесь<br>с нашей</span>
-								<a href="javascript:void(0)">политикой конфиденциальности</a>
-							</p>
-						</label>
-					</div>
-				</div>
-				<button class="popup-record__submit" type="submit">Записаться</button>
-			</form>
-		</div>
-	</div>
-	<div class="popup-record__close js-close">
-		<svg fill="none" height="40" viewBox="0 0 40 40" width="40" xmlns="http://www.w3.org/2000/svg">
-			<path d="M29.5242 29.5238L10.4766 10.4762M29.5242 10.4762L10.4766 29.5238" stroke="#757C9D" stroke-linecap="round"
-			      stroke-linejoin="round"/>
-		</svg>
-	</div>
+<div class="popup-record js-modal-record">
+<!--  		<div class="popup-modal">-->
+<!--  			<div class="popup-modal__title">Успешно!</div>-->
+<!--  		</div>-->
+  <div class="popup-record__inner">
+    <div class="popup-record__block">
+      <h4 class="popup-record__title">Запись на прием</h4>
+      <form action="#1" class="form-record js-form" method="get" name="form-record" novalidate>
+        <div class="popup-record__box">
+          <div class="popup-record__form-group">
+            <div class="popup-record__major">
+              <div class="popup-record__select-name">
+                <span>Специализация</span>
+                <svg viewBox="0 0 19 11" fill="none">
+                  <path d="M1.375 1.25L9.5 9.375L17.625 1.25" stroke="#757C9D" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="popup-record-option-list">
+                <div class="popup-record-option-item">
+                  <label for="major-1">Трихология</label>
+                  <input type="radio" name="major" id="major-1" value="Трихология">
+                </div>
+                <div class="popup-record-option-item">
+                  <label for="major-2">Венерология</label>
+                  <input type="radio" name="major" id="major-2" value="Венерология">
+                </div>
+                <div class="popup-record-option-item">
+                  <label for="major-3">Дерматология</label>
+                  <input type="radio" name="major" id="major-3" value="Дерматология">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popup-record__form-group">
+            <input class="popup-record__input" name="full-name" placeholder="ФИО" required type="text">
+          </div>
+          <div class="popup-record__form-group">
+            <input class="popup-record__input" name="phone" placeholder="Телефон" required type="tel">
+          </div>
+          <div class="popup-record__form-group _privacy">
+            <label for="privacy">
+              <input checked id="privacy" type="checkbox" value="yes">
+              <p>
+                <span>Заполняя форму на веб-сайте, вы соглашаетесь с нашей</span>
+                <a href="javascript:void(0)">политикой конфиденциальности</a>
+              </p>
+            </label>
+          </div>
+        </div>
+        <button class="popup-record__submit" type="submit">Записаться</button>
+      </form>
+    </div>
+  </div>
+  <div class="popup-record__close js-close">
+    <svg fill="none" height="40" viewBox="0 0 40 40" width="40" xmlns="http://www.w3.org/2000/svg">
+      <path d="M29.5242 29.5238L10.4766 10.4762M29.5242 10.4762L10.4766 29.5238" stroke="#757C9D" stroke-linecap="round"
+            stroke-linejoin="round"/>
+    </svg>
+  </div>
 </div>
 
-<div class="overlay active"></div>
-<script src="assets/swiper/swiper-bundle.min.js"></script>
-<script src="assets/js/single-doctor.js"></script>
+<div class="overlay"></div>
+<script src="assets/plugins/swiper/swiper-bundle.min.js" defer></script>
+<script src="assets/plugins/pristine/pristine.min.js" defer></script>
+<script src="assets/js/single-doctor.js" defer></script>
 
 </body>
 </html>
