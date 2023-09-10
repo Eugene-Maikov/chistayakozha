@@ -327,11 +327,34 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   }
-
   handleModalPopup(".js-btn-modal", ".js-modal-record", 'form[name="form-record"]')
 
   // Валидация и отправка формы
   const handleFormSubmit = (formItem, popup) => {
+    const form = document.querySelector(formItem)
+    const modalBlock = document.querySelector(popup)
+
+    if (form && modalBlock) {
+      const pristine = new Pristine(form)
+
+      form.addEventListener("submit", (evt) => {
+        evt.preventDefault()
+        const valid = pristine.validate()
+        if (valid) {
+          evt.preventDefault()
+          modalBlock.classList.add("sucsess")
+          const formData = Object.fromEntries(new FormData(evt.target).entries())
+          formData.phone = formData.phone.replace(/\D/g, "")
+          delete formData["privacy-policy"]
+
+          console.log(formData)
+          setTimeout(() => {
+            evt.target.submit()
+            form.reset()
+          }, 3000)
+        }
+      })
+    }
   }
 
   handleFormSubmit('form[name="form-record"]', ".js-modal-record")
