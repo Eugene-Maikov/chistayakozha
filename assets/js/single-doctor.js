@@ -300,6 +300,7 @@ document.addEventListener("DOMContentLoaded", () => {
           selectInput?.forEach((elements) => {
             elements.value = ""
           })
+          modal.classList.remove("success")
         })
       })
 
@@ -342,16 +343,17 @@ document.addEventListener("DOMContentLoaded", () => {
         const valid = pristine.validate()
         if (valid) {
           evt.preventDefault()
-          modalBlock.classList.add("sucsess")
+          modalBlock.classList.add("success")
+
           const formData = Object.fromEntries(new FormData(evt.target).entries())
           formData.phone = formData.phone.replace(/\D/g, "")
+
           delete formData["privacy-policy"]
 
           console.log(formData)
-          setTimeout(() => {
-            evt.target.submit()
-            form.reset()
-          }, 3000)
+
+          // evt.target.submit()
+          // form.reset()
         }
       })
     }

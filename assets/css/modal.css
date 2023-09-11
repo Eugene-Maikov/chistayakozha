@@ -1,331 +1,404 @@
 /* ---------- MODAL ---------- */
 .popup-record {
-  width: 456px;
-  height: auto;
-  border-radius: 15px;
-  background: #FFF;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 20;
-  display: none;
+	width: 456px;
+	height: auto;
+	border-radius: 15px;
+	background: #FFF;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 20;
+	display: none;
 }
 
 .popup-record.active {
-  display: block;
+	display: block;
 }
 
 .popup-record__close {
-  position: absolute;
-  right: 20px;
-  top: 18px;
-  cursor: pointer;
+	position: absolute;
+	right: 20px;
+	top: 18px;
+	cursor: pointer;
 }
 
 .popup-record__inner {
-  padding: 70px 30px 45px;
+	padding: 70px 30px 45px;
 }
 
 .popup-record__title {
-  color: #333;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  margin-bottom: 30px;
-  text-align: center;
+	color: #333;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin-bottom: 30px;
+	text-align: center;
 }
 
 .popup-record__form-group {
-  display: inline-block;
-  position: relative;
-  width: 100%;
+	display: inline-block;
+	position: relative;
+	width: 100%;
 }
 
 .popup-record__form-group:not(:last-child) {
-  margin-bottom: 34px;
+	margin-bottom: 34px;
 }
 
 /* =========== Стилизация элемента select  =========== */
 .popup-record__major {
-  width: 100%;
-  background-color: transparent;
-  border-radius: 30px;
-  border: 1px solid #757C9D;
-  overflow: hidden;
+	width: 100%;
+	background-color: transparent;
+	border-radius: 30px;
+	border: 1px solid #757C9D;
+	overflow: hidden;
 }
 
 .popup-record__select-name {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-  padding: 18px 15px;
-  position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	padding: 18px 15px;
+	position: relative;
 }
 
 .popup-record__major.active .popup-record__select-name {
-  padding: 18px 15px 8px 15px;
-  border-bottom: none;
+	padding: 18px 15px 8px 15px;
+	border-bottom: none;
 }
 
 .popup-record__select-name span {
-  color: #828282;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+	color: #828282;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
 }
 
 .popup-record__select-name svg {
-  width: 19px;
-  height: 11px;
-  position: absolute;
-  right: 15px;
-  top: 24px;
-  transition: all .3s ease-in-out;
+	width: 19px;
+	height: 11px;
+	position: absolute;
+	right: 15px;
+	top: 24px;
+	transition: all .3s ease-in-out;
 }
 
 .popup-record__major.active .popup-record__select-name svg {
-  transform: rotate(180deg);
+	transform: rotate(180deg);
 }
 
 .popup-record-option-list {
-  display: flex;
-  flex-direction: column;
-  padding: 0 15px 0 15px;
-  height: 0;
-  transition: all .3s ease-in-out;
+	display: flex;
+	flex-direction: column;
+	padding: 0 15px 0 15px;
+	height: 0;
+	transition: all .3s ease-in-out;
 }
 
 .popup-record__major.active .popup-record-option-list {
-  padding: 0 15px 18px 15px;
-  height: 102px;
-  overflow-y: scroll;
+	padding: 0 15px 18px 15px;
+	height: 102px;
+	overflow-y: scroll;
 }
 
 .popup-record-option-list::-webkit-scrollbar {
-  background: #F3F1F1;
-  width: 8px;
-  border-radius: 0 4px 4px 0;
+	background: #F3F1F1;
+	width: 8px;
+	border-radius: 0 4px 4px 0;
 }
 
 .popup-record-option-list::-webkit-scrollbar-thumb {
-  background: #757C9D;
-  width: 8px;
+	background: #757C9D;
+	width: 8px;
 }
 
 .popup-record-option-item input {
-  display: none;
+	display: none;
 }
 
 .popup-record-option-item {
-  cursor: pointer;
-  color: #333;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+	cursor: pointer;
+	color: #333;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
 }
 
 .popup-record-option-item:not(:first-child) {
-  margin-top: 8px;
+	margin-top: 8px;
 }
 
 /* =========== end Стилизация элемента select  =========== */
 
 .popup-record__form-group .popup-record__input {
-  width: 100%;
-  padding: 18px 15px;
-  color: #333;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  border-radius: 30px;
-  outline: none;
-  border: 1px solid #757C9D;
-  background-color: transparent;
+	width: 100%;
+	padding: 18px 15px;
+	color: #333;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	border-radius: 30px;
+	outline: none;
+	border: 1px solid #757C9D;
+	background-color: transparent;
 }
 
 .popup-record__form-group .popup-record__input:focus {
-  box-shadow: 0 0 10px 1px rgba(117, 124, 157, 0.80);
+	box-shadow: 0 0 10px 1px rgba(117, 124, 157, 0.80);
 }
 
-.popup-record__form-group .popup-record__input.error {
-  border: 1px solid #A0072C;
+.popup-record__form-group.has-danger .popup-record__input {
+	border: 1px solid #A0072C;
 }
 
 .popup-record__form-group .popup-record__input::placeholder {
-  color: #828282;
+	color: #828282;
 }
 
 /* =========== стили чекбокса =========== */
 .popup-record__form-group._privacy {
-  margin: 30px 0 27px 0;
+	margin: 30px 0 27px 0;
+	position: relative;
 }
 
 .popup-record__form-group._privacy input {
-  display: none;
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
 }
 
-.popup-record__form-group._privacy p {
-  padding-left: 32px;
+.popup-record__form-group._privacy input + label {
+	display: inline-flex;
+	align-items: center;
+	user-select: none;
+	cursor: pointer;
 }
 
 .popup-record__form-group._privacy span {
-  color: #5D606C;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  user-select: none;
+	color: #5D606C;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin-left: 33px;
 }
 
 .popup-record__form-group._privacy a {
-  color: #A0072C;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-decoration-line: underline;
+	color: #A0072C;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-decoration-line: underline;
 }
 
-.popup-record__form-group._privacy label {
-  cursor: pointer;
+.popup-record__form-group._privacy input + label:before {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 0;
+	min-width: 20px;
+	min-height: 20px;
+	max-width: 20px;
+	max-height: 20px;
+	background: transparent;
+	border: 2px solid #7D84A3;
+	border-radius: 3px;
 }
 
-.popup-record__form-group._privacy p:before {
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: 0;
-  width: 24px;
-  height: 24px;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3e%3cpath d='M3.75 2H20.25C21.216 2 22 2.784 22 3.75V20.25C22 20.7141 21.8156 21.1592 21.4874 21.4874C21.1592 21.8156 20.7141 22 20.25 22H3.75C3.28587 22 2.84075 21.8156 2.51256 21.4874C2.18437 21.1592 2 20.7141 2 20.25V3.75C2 2.784 2.784 2 3.75 2ZM3.5 3.75V20.25C3.5 20.388 3.612 20.5 3.75 20.5H20.25C20.3163 20.5 20.3799 20.4737 20.4268 20.4268C20.4737 20.3799 20.5 20.3163 20.5 20.25V3.75C20.5 3.6837 20.4737 3.62011 20.4268 3.57322C20.3799 3.52634 20.3163 3.5 20.25 3.5H3.75C3.6837 3.5 3.62011 3.52634 3.57322 3.57322C3.52634 3.62011 3.5 3.6837 3.5 3.75Z' fill='%23757C9D'/%3e%3c/svg%3e");
-  background-repeat: no-repeat;
-  background-position: center;
+.popup-record__form-group._privacy input:checked + label:before {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3e%3cpath d='M11.28 1.27985C11.4125 1.13767 11.4846 0.949626 11.4812 0.755325C11.4778 0.561024 11.3991 0.375638 11.2617 0.238225C11.1242 0.100812 10.9389 0.0220997 10.7446 0.0186715C10.5503 0.0152433 10.3622 0.0873672 10.22 0.219847L4.25003 6.18985L1.78003 3.71985C1.63785 3.58737 1.44981 3.51524 1.25551 3.51867C1.06121 3.5221 0.875821 3.60081 0.738408 3.73823C0.600995 3.87564 0.522283 4.06102 0.518855 4.25532C0.515426 4.44963 0.587549 4.63767 0.720029 4.77985L3.72003 7.77985C3.86066 7.9203 4.05128 7.99919 4.25003 7.99919C4.44878 7.99919 4.6394 7.9203 4.78003 7.77985L11.28 1.27985Z' fill='%23757C9D'/%3e%3c/svg%3e");
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
-.popup-record__form-group._privacy input:checked + p:before {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3e%3cpath d='M17.28 9.27985C17.4125 9.13767 17.4846 8.94963 17.4812 8.75532C17.4778 8.56102 17.3991 8.37564 17.2617 8.23823C17.1242 8.10081 16.9389 8.0221 16.7446 8.01867C16.5503 8.01524 16.3622 8.08737 16.22 8.21985L10.25 14.1898L7.78003 11.7198C7.63785 11.5874 7.44981 11.5152 7.25551 11.5187C7.06121 11.5221 6.87582 11.6008 6.73841 11.7382C6.60099 11.8756 6.52228 12.061 6.51885 12.2553C6.51543 12.4496 6.58755 12.6377 6.72003 12.7798L9.72003 15.7798C9.86066 15.9203 10.0513 15.9992 10.25 15.9992C10.4488 15.9992 10.6394 15.9203 10.78 15.7798L17.28 9.27985Z' fill='%23757C9D'/%3e%3cpath d='M3.75 2H20.25C21.216 2 22 2.784 22 3.75V20.25C22 20.7141 21.8156 21.1592 21.4874 21.4874C21.1592 21.8156 20.7141 22 20.25 22H3.75C3.28587 22 2.84075 21.8156 2.51256 21.4874C2.18437 21.1592 2 20.7141 2 20.25V3.75C2 2.784 2.784 2 3.75 2ZM3.5 3.75V20.25C3.5 20.388 3.612 20.5 3.75 20.5H20.25C20.3163 20.5 20.3799 20.4737 20.4268 20.4268C20.4737 20.3799 20.5 20.3163 20.5 20.25V3.75C20.5 3.6837 20.4737 3.62011 20.4268 3.57322C20.3799 3.52634 20.3163 3.5 20.25 3.5H3.75C3.6837 3.5 3.62011 3.52634 3.57322 3.57322C3.52634 3.62011 3.5 3.6837 3.5 3.75Z' fill='%23757C9D'/%3e%3c/svg%3e");
+.popup-record__form-group._privacy.has-danger input + label:before {
+	border-color: #A0072C;
 }
 
-.popup-record__form-group._privacy input.error + p:before {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3e%3cpath d='M1.75 0H18.25C19.216 0 20 0.784 20 1.75V18.25C20 18.7141 19.8156 19.1592 19.4874 19.4874C19.1592 19.8156 18.7141 20 18.25 20H1.75C1.28587 20 0.840752 19.8156 0.512563 19.4874C0.184375 19.1592 0 18.7141 0 18.25V1.75C0 0.784 0.784 0 1.75 0ZM1.5 1.75V18.25C1.5 18.388 1.612 18.5 1.75 18.5H18.25C18.3163 18.5 18.3799 18.4737 18.4268 18.4268C18.4737 18.3799 18.5 18.3163 18.5 18.25V1.75C18.5 1.6837 18.4737 1.62011 18.4268 1.57322C18.3799 1.52634 18.3163 1.5 18.25 1.5H1.75C1.6837 1.5 1.62011 1.52634 1.57322 1.57322C1.52634 1.62011 1.5 1.6837 1.5 1.75Z' fill='%23A0072C'/%3e%3c/svg%3e");
+.popup-record__form-group._privacy.has-danger .pristine-error.text-help {
+	display: none;
+}
+
+.popup-record__form-group.has-danger .pristine-error.text-help {
+	color: #A0072C;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin: 4px 0 0 15px;
 }
 
 /* =========== end стили чекбокса =========== */
-.popup-record__submit {
-  width: 100%;
-  height: 55px;
-  border-radius: 25px;
-  border: none;
-  cursor: pointer;
-  background: #A0072C;
-  color: #FFF;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+.popup-record__button {
+	width: 100%;
+	height: 55px;
+	border-radius: 25px;
+	border: none;
+	cursor: pointer;
+	background: #A0072C;
+	color: #FFF;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
 }
 
+.popup-modal-success {
+	padding: 40px 15px;
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	background: #fff;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.popup-modal__title {
+	color: #333;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin-bottom: 20px;
+}
+
+.popup-modal__subtitle {
+	color: #5D606C;
+	text-align: center;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin-bottom: 30px;
+	max-width: 187px;
+	min-width: 187px;
+}
+.popup-modal-success .popup-record__button{
+	width: 288px;
+}
+.popup-record.js-modal-record.active.success .popup-modal-success {
+	display: flex;
+}
+.popup-record.js-modal-record.active.success .popup-record__inner{
+	display: none;
+}
 
 @media screen and (max-width: 480px) {
-  .popup-record {
-    width: calc(100% - 30px);
-    margin: 0 auto;
-  }
+	.popup-record {
+		width: calc(100% - 30px);
+		margin: 0 auto;
+	}
 
-  .popup-record__inner {
-    padding: 60px 15px 30px;
-  }
+	.popup-record__inner {
+		padding: 60px 15px 30px;
+	}
 
-  .popup-record__title {
-    font-size: 20px;
-    margin-bottom: 35px;
-  }
+	.popup-record__title {
+		font-size: 20px;
+		margin-bottom: 35px;
+	}
 
-  .popup-record__form-group .popup-record__input {
-    padding: 12px 15px;
-    font-size: 14px;
-  }
+	.popup-record__form-group .popup-record__input {
+		padding: 12px 15px;
+		font-size: 14px;
+	}
 
-  /* =========== Стилизация элемента select  =========== */
-  .popup-record__select-name {
-    cursor: default;
-    padding: 12px 15px;
-  }
+	/* =========== Стилизация элемента select  =========== */
+	.popup-record__select-name {
+		cursor: default;
+		padding: 12px 15px;
+	}
 
-  .popup-record__major.active .popup-record__select-name {
-    padding: 12px 15px 8px 15px;
-  }
+	.popup-record__major.active .popup-record__select-name {
+		padding: 12px 15px 8px 15px;
+	}
 
-  .popup-record__select-name span {
-    font-size: 14px;
-  }
+	.popup-record__select-name span {
+		font-size: 14px;
+	}
 
-  .popup-record__select-name svg {
-    width: 13px;
-    height: 10px;
-    right: 20px;
-    top: 16px;
-  }
+	.popup-record__select-name svg {
+		width: 13px;
+		height: 10px;
+		right: 20px;
+		top: 16px;
+	}
 
-  .popup-record__major.active .popup-record-option-list {
-    padding: 0 15px 12px 15px;
-    height: 80px;
-  }
+	.popup-record__major.active .popup-record-option-list {
+		padding: 0 15px 12px 15px;
+		height: 80px;
+	}
 
-  .popup-record-option-item {
-    cursor: default;
-    font-size: 14px;
-  }
+	.popup-record-option-item {
+		cursor: default;
+		font-size: 14px;
+	}
 
-  .popup-record-option-item:not(:first-child) {
-    margin-top: 8px;
-  }
+	.popup-record-option-item:not(:first-child) {
+		margin-top: 8px;
+	}
 
-  /* =========== end Стилизация элемента select  =========== */
-  /* =========== стили чекбокса =========== */
-  .popup-record__form-group._privacy {
-    margin: 0 0 40px 0;
-  }
+	/* =========== end Стилизация элемента select  =========== */
+	/* =========== стили чекбокса =========== */
+	.popup-record__form-group._privacy {
+		margin: 0 0 40px 0;
+	}
 
-  .popup-record__form-group._privacy span {
-    font-size: 12px;
-  }
+	.popup-record__form-group._privacy span {
+		font-size: 12px;
+		margin-left: 27px;
+	}
 
-  .popup-record__form-group._privacy a {
-    font-size: 12px;
-  }
+	.popup-record__form-group._privacy a {
+		font-size: 12px;
+	}
 
-  .popup-record__form-group._privacy label {
-    cursor: default;
-  }
+	.popup-record__form-group._privacy input + label:before {
+		top: 5px;
+		min-width: 16px;
+		min-height: 16px;
+		max-width: 16px;
+		max-height: 16px;
+	}
 
-  .popup-record__form-group._privacy p:before {
-    top: 4px;
-    width: 20px;
-    height: 20px;
-  }
+	.popup-record__form-group._privacy input:checked + label:before {
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='9' height='7' viewBox='0 0 9 7' fill='none'%3e%3cpath d='M8.83475 1.10631C8.94351 0.981604 9.00272 0.816664 8.9999 0.646238C8.99709 0.475812 8.93247 0.313207 8.81966 0.192678C8.70684 0.0721502 8.55465 0.00310946 8.39513 0.000102488C8.23561 -0.00290448 8.08123 0.0603571 7.96451 0.176558L3.06329 5.41298L1.03549 3.24649C0.918766 3.13029 0.764385 3.06703 0.604869 3.07003C0.445352 3.07304 0.293156 3.14208 0.180343 3.26261C0.0675307 3.38314 0.00291041 3.54574 9.59287e-05 3.71617C-0.00271855 3.8866 0.0564925 4.05154 0.165255 4.17624L2.62818 6.80761C2.74363 6.9308 2.90013 7 3.06329 7C3.22646 7 3.38296 6.9308 3.49841 6.80761L8.83475 1.10631Z' fill='%23757C9D'/%3e%3c/svg%3e");
+	}
 
-  .popup-record__form-group._privacy input:checked + p:before {
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3e%3cpath d='M17.28 9.27985C17.4125 9.13767 17.4846 8.94963 17.4812 8.75532C17.4778 8.56102 17.3991 8.37564 17.2617 8.23823C17.1242 8.10081 16.9389 8.0221 16.7446 8.01867C16.5503 8.01524 16.3622 8.08737 16.22 8.21985L10.25 14.1898L7.78003 11.7198C7.63785 11.5874 7.44981 11.5152 7.25551 11.5187C7.06121 11.5221 6.87582 11.6008 6.73841 11.7382C6.60099 11.8756 6.52228 12.061 6.51885 12.2553C6.51543 12.4496 6.58755 12.6377 6.72003 12.7798L9.72003 15.7798C9.86066 15.9203 10.0513 15.9992 10.25 15.9992C10.4488 15.9992 10.6394 15.9203 10.78 15.7798L17.28 9.27985Z' fill='%23757C9D'/%3e%3cpath d='M3.75 2H20.25C21.216 2 22 2.784 22 3.75V20.25C22 20.7141 21.8156 21.1592 21.4874 21.4874C21.1592 21.8156 20.7141 22 20.25 22H3.75C3.28587 22 2.84075 21.8156 2.51256 21.4874C2.18437 21.1592 2 20.7141 2 20.25V3.75C2 2.784 2.784 2 3.75 2ZM3.5 3.75V20.25C3.5 20.388 3.612 20.5 3.75 20.5H20.25C20.3163 20.5 20.3799 20.4737 20.4268 20.4268C20.4737 20.3799 20.5 20.3163 20.5 20.25V3.75C20.5 3.6837 20.4737 3.62011 20.4268 3.57322C20.3799 3.52634 20.3163 3.5 20.25 3.5H3.75C3.6837 3.5 3.62011 3.52634 3.57322 3.57322C3.52634 3.62011 3.5 3.6837 3.5 3.75Z' fill='%23757C9D'/%3e%3c/svg%3e");
-  }
 
-  .popup-record__form-group._privacy input.error + p:before {
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3e%3cpath d='M1.75 0H18.25C19.216 0 20 0.784 20 1.75V18.25C20 18.7141 19.8156 19.1592 19.4874 19.4874C19.1592 19.8156 18.7141 20 18.25 20H1.75C1.28587 20 0.840752 19.8156 0.512563 19.4874C0.184375 19.1592 0 18.7141 0 18.25V1.75C0 0.784 0.784 0 1.75 0ZM1.5 1.75V18.25C1.5 18.388 1.612 18.5 1.75 18.5H18.25C18.3163 18.5 18.3799 18.4737 18.4268 18.4268C18.4737 18.3799 18.5 18.3163 18.5 18.25V1.75C18.5 1.6837 18.4737 1.62011 18.4268 1.57322C18.3799 1.52634 18.3163 1.5 18.25 1.5H1.75C1.6837 1.5 1.62011 1.52634 1.57322 1.57322C1.52634 1.62011 1.5 1.6837 1.5 1.75Z' fill='%23A0072C'/%3e%3c/svg%3e");
-  }
+	/* =========== end стили чекбокса =========== */
+	.popup-record__button {
+		width: 100%;
+		height: 45px;
+		font-size: 16px;
+	}
 
-  /* =========== end стили чекбокса =========== */
-  .popup-record__submit {
-    width: 100%;
-    height: 45px;
-    font-size: 16px;
-  }
+	.popup-modal-success {
+		padding: 30px 0;
+	}
 
+	.popup-modal__title {
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
+
+	.popup-modal__subtitle {
+		margin-bottom: 25px;
+	}
+	.popup-modal-success .popup-record__button{
+		width: 100%;
+	}
 }
 
 /* ---------- end MODAL ---------- */

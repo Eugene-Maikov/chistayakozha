@@ -698,8 +698,10 @@
 </main>
 
 <div class="popup-record js-modal-record">
-  <div class="popup-modal">
-    <div class="popup-modal__title">Успешно!</div>
+  <div class="popup-modal-success">
+    <h4 class="popup-modal__title">Успешно!</h4>
+    <div class="popup-modal__subtitle">Ждем вас на приеме в МЦ «Чистая кожа»</div>
+    <button class="popup-record__button js-close" type="button">Закрыть</button>
   </div>
   <div class="popup-record__inner">
     <div class="popup-record__block">
@@ -731,23 +733,26 @@
               </div>
             </div>
           </div>
-          <div class="popup-record__form-group">
-            <input class="popup-record__input" name="full-name" placeholder="ФИО" required data-pristine-required-message="необходимо заполнить поле" type="text">
+          <div class="popup-record__form-group form-group">
+            <input class="popup-record__input" name="full-name" placeholder="ФИО" required data-pristine-required-message="Неверное имя" type="text">
           </div>
-          <div class="popup-record__form-group">
-            <input class="popup-record__input" name="phone" placeholder="Телефон" required data-pristine-required-message="необходимо заполнить поле" type="tel">
+          <div class="popup-record__form-group form-group">
+            <input class="popup-record__input" name="phone" placeholder="Телефон" required data-pristine-required-message="Неверный телефон" minlength="18" type="tel">
           </div>
-          <div class="popup-record__form-group _privacy">
-            <label for="privacy">
-              <input checked id="privacy" type="checkbox" value="yes" required data-pristine-required-message="необходимо заполнить поле">
-              <p>
-                <span>Заполняя форму на веб-сайте, вы соглашаетесь с нашей</span>
-                <a href="javascript:void(0)" target="_blank">политикой конфиденциальности</a>
-              </p>
+
+          <div class="popup-record__form-group _privacy form-group">
+            <input type="checkbox" class="popup-ticket__checkbox form-control" id="privacy-policy"
+                   name="privacy-policy" required>
+            <label for="privacy-policy">
+                <span class="privacy-policy__text">
+                  Заполняя форму на веб-сайте, вы соглашаетесь с нашей
+                  <a href="javascript:void(0)" class="privacy-policy__link" target="_blank">
+                    политикой конфиденциальности</a>
+                </span>
             </label>
           </div>
         </div>
-        <button class="popup-record__submit" type="submit">Записаться</button>
+        <button class="popup-record__button" type="submit">Записаться</button>
       </form>
     </div>
   </div>
