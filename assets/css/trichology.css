@@ -133,6 +133,82 @@
 }
 
 /* --------------------- end Trichology-services --------------------- */
+/* --------------------- Trichology-about --------------------- */
+.trichology-about {
+	margin-bottom: 80px;
+}
+
+.trichology-about .main__title-small {
+	margin-bottom: 50px;
+}
+
+.trichology-about__box {
+	position: relative;
+}
+
+.trichology-about__ellipse {
+	position: absolute;
+	top: 30px;
+	left: 4px;
+	z-index: -1;
+}
+
+.trichology-about__inner {
+	display: flex;
+	margin-bottom: 87px;
+}
+
+.trichology-about__image {
+	margin: 6px 15px 8px 56px;;
+}
+
+.trichology-about__image img {
+	max-width: 465px;
+	max-height: 651px;
+	min-width: 465px;
+	min-height: 651px;
+	object-fit: cover;
+	border-radius: 233px;
+}
+
+.trichology-about__content {
+	border-radius: 20px;
+	border: 2px solid #757C9D;
+	background: #FFF;
+	padding: 30px 40px;
+}
+
+.trichology-about__content h3 {
+	color: #757C9D;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin-bottom: 20px;
+}
+
+.trichology-about__content p {
+	color: #5D606C;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.trichology-about__content-accent {
+	color: #757C9D;
+	font-weight: 600;
+}
+
+.trichology-about__content p:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.trichology-about__content._left-description p:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+/* --------------------- end Trichology-about --------------------- */
 @media screen and (max-width: 1200px) {
 
 }
@@ -201,7 +277,9 @@
 	.trichology-services__buttons .slider-btn-next[aria-disabled="true"] {
 		border: 1px solid #757c9d;
 	}
+
 	/* --------------------- end Trichology-services --------------------- */
+
 }
 
 @media screen and (max-width: 680px) {
@@ -246,6 +324,7 @@
 	.trichology-services__buttons .slider-btn-next {
 		left: 62px;
 	}
+
 	/* --------------------- end Trichology-intro --------------------- */
 }
 
