@@ -50,6 +50,19 @@ img {
 	display: block;
 }
 
+.main__title {
+	color: #333;
+	font-size: 50px;
+	font-weight: 600;
+	margin-bottom: 50px;
+}
+.main__title-small {
+	color: #333;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
 .single-doctor-title {
 	color: #333;
 	font-size: 40px;
@@ -59,12 +72,26 @@ img {
 }
 
 @media screen and (max-width: 990px) {
+	.main__title {
+		font-size: 40px;
+		margin-bottom: 40px;
+	}
+	.main__title-small {
+		font-size: 35px;
+	}
 	.single-doctor-title {
 		font-size: 35px;
 	}
 }
 
 @media screen and (max-width: 680px) {
+	.main__title {
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+	.main__title-small {
+		font-size: 25px;
+	}
 	.single-doctor-title {
 		font-size: 25px;
 	}
