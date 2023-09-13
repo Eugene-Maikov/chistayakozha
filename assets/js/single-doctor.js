@@ -32,8 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const line = item.querySelector('.skill__dates-line')
 
       const calc = () => {
-        const liHeight = lastLi.offsetHeight;
-        const ulHeight = heightUl.offsetHeight;
+        const liHeight = lastLi.offsetHeight
+        const ulHeight = heightUl.offsetHeight
         const result = ulHeight - liHeight
         line.style.height = (result - 100) + 'px'
       }
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
         spaceBetween: 31,
       }
     }
-  });
+  })
   const reviewsSlider = new Swiper('.reviews__slider', {
     slidesPerView: 3,
     spaceBetween: 31,
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
         spaceBetween: 31,
       }
     }
-  });
+  })
   const otherDoctorsSlider = new Swiper('.other-doctors__slider', {
     slidesPerView: 3,
     spaceBetween: 30,
@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
         spaceBetween: 31,
       }
     }
-  });
+  })
 
   // Отчество и фамилия с новой строки
   const splitString = () => {
@@ -235,42 +235,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   switchMajor()
 
-
-  // const myVal = () => {
-  //   // Валидация
-  //   const form = document.querySelector('.js-form')
-  //   form.addEventListener('submit', (e) => {
-  //     e.preventDefault()
-  //
-  //     const name = document.querySelector('input[name="full-name"]');
-  //     const phone = document.querySelector('input[name="phone"]');
-  //     const privacy = document.querySelector('input[type="checkbox"]');
-  //
-  //     const nameValue = name.value.trim()
-  //     const phoneValue = phone.value.trim()
-  //     const privacyValue = privacy.checked
-  //
-  //     if (nameValue === '') {
-  //       name.classList.add('error');
-  //     } else {
-  //       name.classList.remove('error');
-  //     }
-  //
-  //     if (phoneValue === '') {
-  //       phone.classList.add('error');
-  //     } else {
-  //       phone.classList.remove('error');
-  //     }
-  //
-  //     if (!privacyValue) {
-  //       privacy.classList.add('error');
-  //     } else {
-  //       privacy.classList.remove('error');
-  //     }
-  //
-  //     form.submit()
-  //   })
-  // }
 // модальные окна
   const handleModalPopup = (btn, blockModal, blockForm) => {
     const buttons = document.querySelectorAll(btn)

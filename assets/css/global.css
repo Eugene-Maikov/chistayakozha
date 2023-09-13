@@ -55,6 +55,7 @@ img {
 	font-size: 50px;
 	font-weight: 600;
 	margin-bottom: 50px;
+	line-height: normal;
 }
 .main__title-small {
 	color: #333;
